@@ -14,7 +14,7 @@ namespace BloodPressure
    
     public class CRUD : ICRUD
     {
-        static string connString = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=C:\\Users\\moham\\source\\repos\\BloodPressure\\App_Data\\BloodPressure.mdf;Integrated Security=True";
+        static string connString = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=C:\\Users\\moham\\source\\repos\\repo\\Blood-Pressure-system\\BloodPressure\\App_Data\\BloodPressure.mdf;Integrated Security=True";
         SqlConnection sqlConn = new SqlConnection(connString);
 
         public List<string> getObservers()
@@ -35,17 +35,35 @@ namespace BloodPressure
             return Emailslist;
         }
 
-        public void insertBloodTrack(BloodTrack bt)
+        public int getSuitableDiet(float Pressure)
+        {
+            if (Pressure >= 120 && Pressure <= 140)
+            {
+                return 8;
+            }
+            else if (Pressure > 140)
+            {
+                return 9;
+            }
+            else
+                return 10;
+        }
+
+        public void insertBloodTrack(BloodTrack bt, int PersonID)
         {
             sqlConn.Open();
             SqlCommand cmd = new SqlCommand("insert into BloodTrack values (@TrackDate,@HighBloodPressure,@LowBloodPressure,@PersonID,@NextBloodTrack)", sqlConn);
+
             cmd.Parameters.AddWithValue("@TrackDate", DateTime.Now);
             cmd.Parameters.AddWithValue("@HighBloodPressure", bt.HighBloodPressure);
             cmd.Parameters.AddWithValue("@LowBloodPressure", bt.LowBloodPressure);
-            cmd.Parameters.AddWithValue("@PersonID", bt.PersonID);
+            cmd.Parameters.AddWithValue("@PersonID", PersonID);
             cmd.Parameters.AddWithValue("@NextBloodTrack", DateTime.Now.AddDays(1));
+            int DiteID = getSuitableDiet(bt.HighBloodPressure);
             cmd.ExecuteNonQuery();
             sqlConn.Close();
+            setPersonDiet(DiteID, PersonID);
+            
         }
 
         public void insertDiet(Diet d)
@@ -82,10 +100,10 @@ namespace BloodPressure
             sqlConn.Close();
         }
 
-        public void insertPerson(Person p)
+        public int insertPerson(Person p)
         {
             sqlConn.Open();
-            SqlCommand cmd = new SqlCommand("insert into Person (Name,Age,Weight,Gender,Email,Password,DietID) values (@Name,@Age,@Weight,@Gender,@Email,@Password,@DietID)", sqlConn);
+            SqlCommand cmd = new SqlCommand("insert into Person (Name,Age,Weight,Gender,Email,Password) values (@Name,@Age,@Weight,@Gender,@Email,@Password);SELECT scope_identity()", sqlConn);
             
             cmd.Parameters.AddWithValue("@Name", p.Name);
             cmd.Parameters.AddWithValue("@Age", p.Age);
@@ -93,8 +111,21 @@ namespace BloodPressure
             cmd.Parameters.AddWithValue("@Gender", p.Gender);
             cmd.Parameters.AddWithValue("@Email",p.Email);
             cmd.Parameters.AddWithValue("@Password",p.Password);
-            cmd.Parameters.AddWithValue("@DietID", p.DietID);
+            int id = Convert.ToInt32(cmd.ExecuteScalar());
+            
+            sqlConn.Close();
+            return id;
+        }
+
+        public void setPersonDiet(int DietID, int PersonID)
+        {
+            sqlConn.Open();
+            SqlCommand cmd = new SqlCommand("update Person set DietID = @DietID where Person.PersonID = @PersonID;", sqlConn);
+
+            cmd.Parameters.AddWithValue("@DietID", DietID);
+            cmd.Parameters.AddWithValue("@PersonID", PersonID);
             cmd.ExecuteNonQuery();
+
             sqlConn.Close();
         }
 

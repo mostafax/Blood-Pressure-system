@@ -11,10 +11,10 @@ namespace BloodPressure
     // NOTE: In order to launch WCF Test Client for testing this service, please select Login.svc or Login.svc.cs at the Solution Explorer and start debugging.
     public class Login : ILogin
     {
-        //TODO .. impelemt Login Function .. 
+        //TODO .. impelemt Login Function -> return -1 if not valid else return PersonID. 
         // Note -> For using Any of CRUD methods You Can Do As Follwing :
         //  CRUD crudMethods = new CRUD();
-        bool ILogin.Login(string Email)
+        int ILogin.Login(string Email)
         {
             throw new NotImplementedException();
         }

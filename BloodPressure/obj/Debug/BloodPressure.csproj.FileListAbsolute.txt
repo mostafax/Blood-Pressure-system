@@ -4,3 +4,9 @@ C:\Users\moham\source\repos\BloodPressure\bin\BloodPressure.pdb
 C:\Users\moham\source\repos\BloodPressure\obj\Debug\BloodPressure.dll
 C:\Users\moham\source\repos\BloodPressure\obj\Debug\BloodPressure.pdb
 C:\Users\moham\source\repos\BloodPressure\obj\Debug\BloodPressure.csprojAssemblyReference.cache
+C:\Users\moham\source\repos\repo\Blood-Pressure-system\BloodPressure\bin\BloodPressure.dll.config
+C:\Users\moham\source\repos\repo\Blood-Pressure-system\BloodPressure\bin\BloodPressure.dll
+C:\Users\moham\source\repos\repo\Blood-Pressure-system\BloodPressure\bin\BloodPressure.pdb
+C:\Users\moham\source\repos\repo\Blood-Pressure-system\BloodPressure\obj\Debug\BloodPressure.csprojAssemblyReference.cache
+C:\Users\moham\source\repos\repo\Blood-Pressure-system\BloodPressure\obj\Debug\BloodPressure.dll
+C:\Users\moham\source\repos\repo\Blood-Pressure-system\BloodPressure\obj\Debug\BloodPressure.pdb

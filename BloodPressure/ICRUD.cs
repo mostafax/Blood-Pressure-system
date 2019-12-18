@@ -11,7 +11,7 @@ namespace BloodPressure
     public interface ICRUD
     {
         [OperationContract]
-        void insertPerson(Person p);
+        int insertPerson(Person p);
 
         [OperationContract]
         void insertDiet(Diet d);
@@ -23,7 +23,7 @@ namespace BloodPressure
         void insertDietMeal(DietMeal dm);
 
         [OperationContract]
-        void insertBloodTrack(BloodTrack bt);
+        void insertBloodTrack(BloodTrack bt, int PersonID);
 
         [OperationContract]
         Person viewPersonInfo(int PersonID);
@@ -39,6 +39,12 @@ namespace BloodPressure
 
         [OperationContract]
         void updatePerson(Person p);
+
+        [OperationContract]
+        int getSuitableDiet(float Pressure);
+
+        [OperationContract]
+        void setPersonDiet(int DietID, int PersonID);
 
     }
 }

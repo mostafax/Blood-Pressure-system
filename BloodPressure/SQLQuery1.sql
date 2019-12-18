@@ -1,1 +1,1 @@
-﻿update Person set Name = 'm', Age = 12,Weight = 12,Gender = 'male',Email = 'm', Password='m',DietID = 6 where Person.PersonID = 3;
+﻿insert into Person (Name,Age,Gender,Email,Password,DietID,Weight) values ('z',12,'z','z','z',9,12) SELECT scope_identity(); 
