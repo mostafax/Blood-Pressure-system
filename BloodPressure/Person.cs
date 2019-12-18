@@ -7,7 +7,7 @@ namespace BloodPressure
 {
     public class Person
     {
-        public Person() { this.PersonID = 0; this.UpdatePressure = 'F'; }
+        public Person() { this.PersonID = 0; }
         public Person(SqlDataReader Result, SqlConnection sqlConn)
         {
             this.PersonID = int.Parse(Result["PersonID"].ToString());
@@ -17,7 +17,6 @@ namespace BloodPressure
             this.Email = Result["Email"].ToString();
             this.Password = Result["Password"].ToString();
             this.Weight = int.Parse(Result["Weight"].ToString());
-            this.UpdatePressure = Result["UpdatePressure"].ToString()[0];
             sqlConn.Close();
         }
         public string Name;
@@ -28,6 +27,5 @@ namespace BloodPressure
         public int Age;
         public int DietID;
         public int PersonID;
-        public char UpdatePressure;
     }
 }

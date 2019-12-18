@@ -66,6 +66,8 @@
       <DependentUpon>BloodPressure.mdf</DependentUpon>
     </Content>
     <Content Include="CRUD.svc" />
+    <Content Include="EmailNotifications.svc" />
+    <Content Include="Login.svc" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -75,12 +77,22 @@
     </Compile>
     <Compile Include="Diet.cs" />
     <Compile Include="DietMeal.cs" />
+    <Compile Include="EmailNotifications.svc.cs">
+      <DependentUpon>EmailNotifications.svc</DependentUpon>
+    </Compile>
     <Compile Include="ICRUD.cs" />
+    <Compile Include="IEmailNotifications.cs" />
+    <Compile Include="ILogin.cs" />
+    <Compile Include="Login.svc.cs">
+      <DependentUpon>Login.svc</DependentUpon>
+    </Compile>
     <Compile Include="Meal.cs" />
     <Compile Include="Person.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
   <ItemGroup>
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>

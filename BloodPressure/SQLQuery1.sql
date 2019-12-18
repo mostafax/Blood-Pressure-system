@@ -1,0 +1,1 @@
+﻿update Person set Name = 'm', Age = 12,Weight = 12,Gender = 'male',Email = 'm', Password='m',DietID = 6 where Person.PersonID = 3;

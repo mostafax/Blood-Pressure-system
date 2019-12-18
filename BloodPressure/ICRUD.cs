@@ -28,5 +28,17 @@ namespace BloodPressure
         [OperationContract]
         Person viewPersonInfo(int PersonID);
 
+        [OperationContract]
+        List<string> viewPersonDiet(int PersonID);
+
+        [OperationContract]
+        List<BloodTrack> viewPersonBloodPressure(int PersonID);
+
+        [OperationContract]
+        List<string> getObservers();
+
+        [OperationContract]
+        void updatePerson(Person p);
+
     }
 }
