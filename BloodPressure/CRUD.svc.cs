@@ -172,7 +172,7 @@ namespace BloodPressure
         public List<string> viewPersonDiet(int PersonID)
         {
             sqlConn.Open();
-            SqlCommand cmd = new SqlCommand("select Diet.DietName,Diet.DietType, Meal.Name,Meal.Type from  Person, Diet, DietMeal, Meal where PersonID = @PersonID AND Diet.DietID = (select Person.DietID from Person where Person.PersonID = @PersonID) AND (DietMeal.BreakFast = Meal.MealID OR DietMeal.Lunch = Meal.MealID OR DietMeal.Dinner = Meal.MealID )  ", sqlConn);
+            SqlCommand cmd = new SqlCommand("select Diet.DietName,Diet.DietType, Meal.Name,Meal.Type from  Person, Diet, DietMeal, Meal where PersonID = @PersonID AND Diet.DietID = (select Person.DietID from Person where Person.PersonID = @PersonID) AND (DietMeal.BreakFast = Meal.MealID OR DietMeal.Lunch = Meal.MealID OR DietMeal.Dinner = Meal.MealID ) AND DietMeal.DietID = Person.DietID ", sqlConn);
             cmd.Parameters.AddWithValue("@PersonID", PersonID);
             SqlDataReader reader;
             reader = cmd.ExecuteReader();
