@@ -28,5 +28,27 @@ namespace BloodPressureForms
             
             
         }
+
+        private void Wasfety_Click(object sender, EventArgs e)
+        {
+            Wasfety wasfety = new Wasfety();
+            wasfety.Show();
+            this.Hide();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void DietMeal_Panel_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            DietMeal_Panel.Show();
+        }
     }
 }
