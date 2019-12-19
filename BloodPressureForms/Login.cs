@@ -28,5 +28,12 @@ namespace BloodPressureForms
             mainMenu.Show();
             this.Hide();
         }
+
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+            UserDetails userDetails = new UserDetails();
+            userDetails.Show();
+            this.Hide();
+        }
     }
 }
