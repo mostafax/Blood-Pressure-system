@@ -16,7 +16,7 @@ namespace BloodPressureForms
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new wasfety());
+            Application.Run(new MainMenu());
         }
     }
 }
