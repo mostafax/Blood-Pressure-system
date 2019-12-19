@@ -31,9 +31,20 @@ namespace BloodPressureForms
 
         private void pictureBox3_Click(object sender, EventArgs e)
         {
-            UserDetails userDetails = new UserDetails();
-            userDetails.Show();
-            this.Hide();
+
+            LoginService.LoginClient login = new LoginService.LoginClient();
+            int ID = login.Login(EmailBox.Text, PasswordBox.Text);
+            if (ID == -1)
+            {
+                MessageBox.Show("Invalid Email or Password");
+            }
+            else
+            {
+                UserDetails userDetails = new UserDetails();
+                userDetails.Show();
+                this.Hide();
+            }
+
         }
     }
 }

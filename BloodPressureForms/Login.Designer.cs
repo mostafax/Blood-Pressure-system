@@ -29,8 +29,8 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Login));
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.Doc_Name = new System.Windows.Forms.TextBox();
+            this.PasswordBox = new System.Windows.Forms.TextBox();
+            this.EmailBox = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
@@ -42,25 +42,25 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
-            // textBox1
+            // PasswordBox
             // 
-            this.textBox1.BackColor = System.Drawing.Color.Gainsboro;
-            this.textBox1.Font = new System.Drawing.Font("Century Gothic", 10.8F);
-            this.textBox1.Location = new System.Drawing.Point(263, 205);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(168, 25);
-            this.textBox1.TabIndex = 39;
+            this.PasswordBox.BackColor = System.Drawing.Color.Gainsboro;
+            this.PasswordBox.Font = new System.Drawing.Font("Century Gothic", 10.8F);
+            this.PasswordBox.Location = new System.Drawing.Point(263, 205);
+            this.PasswordBox.Margin = new System.Windows.Forms.Padding(2);
+            this.PasswordBox.Name = "PasswordBox";
+            this.PasswordBox.Size = new System.Drawing.Size(168, 25);
+            this.PasswordBox.TabIndex = 39;
             // 
-            // Doc_Name
+            // EmailBox
             // 
-            this.Doc_Name.BackColor = System.Drawing.Color.Gainsboro;
-            this.Doc_Name.Font = new System.Drawing.Font("Century Gothic", 10.8F);
-            this.Doc_Name.Location = new System.Drawing.Point(263, 135);
-            this.Doc_Name.Margin = new System.Windows.Forms.Padding(2);
-            this.Doc_Name.Name = "Doc_Name";
-            this.Doc_Name.Size = new System.Drawing.Size(168, 25);
-            this.Doc_Name.TabIndex = 38;
+            this.EmailBox.BackColor = System.Drawing.Color.Gainsboro;
+            this.EmailBox.Font = new System.Drawing.Font("Century Gothic", 10.8F);
+            this.EmailBox.Location = new System.Drawing.Point(263, 135);
+            this.EmailBox.Margin = new System.Windows.Forms.Padding(2);
+            this.EmailBox.Name = "EmailBox";
+            this.EmailBox.Size = new System.Drawing.Size(168, 25);
+            this.EmailBox.TabIndex = 38;
             // 
             // label1
             // 
@@ -138,8 +138,8 @@
             this.BackColor = System.Drawing.Color.Navy;
             this.ClientSize = new System.Drawing.Size(595, 430);
             this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.Doc_Name);
+            this.Controls.Add(this.PasswordBox);
+            this.Controls.Add(this.EmailBox);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.pictureBox2);
@@ -159,8 +159,8 @@
 
         #endregion
 
-        public System.Windows.Forms.TextBox textBox1;
-        public System.Windows.Forms.TextBox Doc_Name;
+        public System.Windows.Forms.TextBox PasswordBox;
+        public System.Windows.Forms.TextBox EmailBox;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.PictureBox pictureBox2;

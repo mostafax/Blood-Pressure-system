@@ -50,5 +50,12 @@ namespace BloodPressureForms
         {
             BloodPressure_Panel.Show();
         }
+
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+            Login login = new Login();
+            login.Show();
+            this.Hide();
+        }
     }
 }
