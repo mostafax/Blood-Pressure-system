@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace BloodPressureForms
 {
-    public partial class UserDetails : Form
+    public partial class UserProfile : Form
     {
-        public UserDetails()
+        public UserProfile()
         {
             InitializeComponent();
         }
@@ -22,11 +22,11 @@ namespace BloodPressureForms
             Application.Exit();
         }
 
-        private void button5_Click(object sender, EventArgs e)
+        private void pictureBox3_Click(object sender, EventArgs e)
         {
-            BloodPressure_Panel.Show();
-            
-            
+            UserDetails userDetails = new UserDetails();
+            userDetails.Show();
+            this.Hide();
         }
     }
 }

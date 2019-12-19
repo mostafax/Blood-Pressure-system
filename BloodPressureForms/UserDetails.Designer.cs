@@ -37,9 +37,17 @@
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
+            this.Wasfety = new System.Windows.Forms.Button();
+            this.BloodPressure_Panel = new System.Windows.Forms.Panel();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.button4 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            this.BloodPressure_Panel.SuspendLayout();
             this.SuspendLayout();
             // 
             // pictureBox1
@@ -100,6 +108,7 @@
             this.button5.Text = "Edit Profile";
             this.button5.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.button5.UseVisualStyleBackColor = false;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
             // button2
             // 
@@ -151,12 +160,91 @@
             this.button3.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.button3.UseVisualStyleBackColor = false;
             // 
+            // Wasfety
+            // 
+            this.Wasfety.BackColor = System.Drawing.Color.LightPink;
+            this.Wasfety.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(50)))), ((int)(((byte)(55)))));
+            this.Wasfety.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Wasfety.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Wasfety.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(50)))), ((int)(((byte)(55)))));
+            this.Wasfety.Location = new System.Drawing.Point(294, 298);
+            this.Wasfety.Margin = new System.Windows.Forms.Padding(2);
+            this.Wasfety.Name = "Wasfety";
+            this.Wasfety.Size = new System.Drawing.Size(139, 59);
+            this.Wasfety.TabIndex = 55;
+            this.Wasfety.Text = "Check Meal";
+            this.Wasfety.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.Wasfety.UseVisualStyleBackColor = false;
+            // 
+            // BloodPressure_Panel
+            // 
+            this.BloodPressure_Panel.Controls.Add(this.button4);
+            this.BloodPressure_Panel.Controls.Add(this.textBox2);
+            this.BloodPressure_Panel.Controls.Add(this.textBox1);
+            this.BloodPressure_Panel.Controls.Add(this.label2);
+            this.BloodPressure_Panel.Controls.Add(this.label5);
+            this.BloodPressure_Panel.Enabled = false;
+            this.BloodPressure_Panel.Location = new System.Drawing.Point(139, 129);
+            this.BloodPressure_Panel.Name = "BloodPressure_Panel";
+            this.BloodPressure_Panel.Size = new System.Drawing.Size(461, 228);
+            this.BloodPressure_Panel.TabIndex = 56;
+            this.BloodPressure_Panel.Visible = false;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.label5.Location = new System.Drawing.Point(9, 50);
+            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(210, 20);
+            this.label5.TabIndex = 31;
+            this.label5.Text = "Current High Blood Pressure";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.label2.Location = new System.Drawing.Point(9, 103);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(209, 20);
+            this.label2.TabIndex = 33;
+            this.label2.Text = "Current Low Blood Pressure";
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(238, 51);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(100, 20);
+            this.textBox1.TabIndex = 34;
+            // 
+            // textBox2
+            // 
+            this.textBox2.Location = new System.Drawing.Point(238, 104);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(100, 20);
+            this.textBox2.TabIndex = 35;
+            // 
+            // button4
+            // 
+            this.button4.Location = new System.Drawing.Point(175, 169);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(75, 23);
+            this.button4.TabIndex = 36;
+            this.button4.Text = "Update";
+            this.button4.UseVisualStyleBackColor = true;
+            // 
             // UserDetails
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Navy;
             this.ClientSize = new System.Drawing.Size(692, 383);
+            this.Controls.Add(this.BloodPressure_Panel);
+            this.Controls.Add(this.Wasfety);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.button2);
@@ -172,6 +260,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            this.BloodPressure_Panel.ResumeLayout(false);
+            this.BloodPressure_Panel.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -187,5 +277,12 @@
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button Wasfety;
+        private System.Windows.Forms.Panel BloodPressure_Panel;
+        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Button button4;
     }
 }

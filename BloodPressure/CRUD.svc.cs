@@ -209,7 +209,7 @@ namespace BloodPressure
             if (result.HasRows){
                 result.Read();
             }
-            
+             
             return new Person(result, sqlConn);
         }
     }

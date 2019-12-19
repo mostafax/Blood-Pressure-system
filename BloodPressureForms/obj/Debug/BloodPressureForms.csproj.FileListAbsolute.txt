@@ -10,6 +10,7 @@ D:\First Term - 4th Year\SW Architecture\Project\Blood-Pressure-system\BloodPres
 D:\First Term - 4th Year\SW Architecture\Project\Blood-Pressure-system\BloodPressureForms\obj\Debug\BloodPressureForms.Properties.Resources.resources
 D:\First Term - 4th Year\SW Architecture\Project\Blood-Pressure-system\BloodPressureForms\obj\Debug\BloodPressureForms.Register.resources
 D:\First Term - 4th Year\SW Architecture\Project\Blood-Pressure-system\BloodPressureForms\obj\Debug\BloodPressureForms.UserDetails.resources
+D:\First Term - 4th Year\SW Architecture\Project\Blood-Pressure-system\BloodPressureForms\obj\Debug\BloodPressureForms.UserProfile.resources
 D:\First Term - 4th Year\SW Architecture\Project\Blood-Pressure-system\BloodPressureForms\obj\Debug\BloodPressureForms.csproj.GenerateResource.cache
 D:\First Term - 4th Year\SW Architecture\Project\Blood-Pressure-system\BloodPressureForms\obj\Debug\BloodPressureForms.csproj.CopyComplete
 D:\First Term - 4th Year\SW Architecture\Project\Blood-Pressure-system\BloodPressureForms\obj\Debug\BloodPressureForms.exe
