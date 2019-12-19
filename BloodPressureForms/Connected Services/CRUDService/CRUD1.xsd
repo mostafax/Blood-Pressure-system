@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/BloodPressure" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/BloodPressure" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexType name="Person">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Age" type="xs:int" />
+      <xs:element minOccurs="0" name="DietID" type="xs:int" />
+      <xs:element minOccurs="0" name="Email" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Gender" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Password" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PersonID" type="xs:int" />
+      <xs:element minOccurs="0" name="Weight" type="xs:float" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Person" nillable="true" type="tns:Person" />
+  <xs:complexType name="Diet">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="DietID" type="xs:int" />
+      <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Type" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Diet" nillable="true" type="tns:Diet" />
+  <xs:complexType name="Meal">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="MealID" type="xs:int" />
+      <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Type" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Meal" nillable="true" type="tns:Meal" />
+  <xs:complexType name="DietMeal">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="BreakFast" type="xs:int" />
+      <xs:element minOccurs="0" name="DietID" type="xs:int" />
+      <xs:element minOccurs="0" name="Dinner" type="xs:int" />
+      <xs:element minOccurs="0" name="Lunch" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="DietMeal" nillable="true" type="tns:DietMeal" />
+  <xs:complexType name="BloodTrack">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="BloodTrackID" type="xs:int" />
+      <xs:element minOccurs="0" name="HighBloodPressure" type="xs:float" />
+      <xs:element minOccurs="0" name="LowBloodPressure" type="xs:float" />
+      <xs:element minOccurs="0" name="NextBloodTrack" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="PersonID" type="xs:int" />
+      <xs:element minOccurs="0" name="TrackDate" type="xs:dateTime" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="BloodTrack" nillable="true" type="tns:BloodTrack" />
+  <xs:complexType name="ArrayOfBloodTrack">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="BloodTrack" nillable="true" type="tns:BloodTrack" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfBloodTrack" nillable="true" type="tns:ArrayOfBloodTrack" />
+</xs:schema>
