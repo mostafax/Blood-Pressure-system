@@ -15,14 +15,14 @@ namespace BloodPressure
    
     public class CRUD : ICRUD
     {
-        static string connString = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=D:\\First Term - 4th Year\\SW Architecture\\Project\\Blood-Pressure-system\\BloodPressure\\App_Data\\BloodPressure.mdf;Integrated Security=True";
+        static string connString = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=C:\\Users\\mostafax\\Desktop\\Blood-Pressure-system\\BloodPressure\\App_Data\\BloodPressure.mdf;Integrated Security=True";
         SqlConnection sqlConn = new SqlConnection(connString);
 
         public List<string> getObservers()
         {
             
             sqlConn.Open();
-            SqlCommand cmd = new SqlCommand("select Email from BloodTrack, Person where BloodTrack.NextBloodTrack >= GETDATE() and Person.PersonID = BloodTrack.PersonID", sqlConn);
+            SqlCommand cmd = new SqlCommand("select distinct Email from BloodTrack, Person where BloodTrack.NextBloodTrack >= GETDATE()-1 and Person.PersonID = BloodTrack.PersonID", sqlConn);
             SqlDataReader reader;
             reader = cmd.ExecuteReader();
             List<string> Emailslist = new List<string>();

@@ -16,3 +16,9 @@ D:\First Term - 4th Year\SW Architecture\Project\Blood-Pressure-system\BloodPres
 D:\First Term - 4th Year\SW Architecture\Project\Blood-Pressure-system\BloodPressure\obj\Debug\BloodPressure.csprojAssemblyReference.cache
 D:\First Term - 4th Year\SW Architecture\Project\Blood-Pressure-system\BloodPressure\obj\Debug\BloodPressure.dll
 D:\First Term - 4th Year\SW Architecture\Project\Blood-Pressure-system\BloodPressure\obj\Debug\BloodPressure.pdb
+C:\Users\mostafax\Desktop\Blood-Pressure-system\BloodPressure\bin\BloodPressure.dll.config
+C:\Users\mostafax\Desktop\Blood-Pressure-system\BloodPressure\bin\BloodPressure.dll
+C:\Users\mostafax\Desktop\Blood-Pressure-system\BloodPressure\bin\BloodPressure.pdb
+C:\Users\mostafax\Desktop\Blood-Pressure-system\BloodPressure\obj\Debug\BloodPressure.csprojAssemblyReference.cache
+C:\Users\mostafax\Desktop\Blood-Pressure-system\BloodPressure\obj\Debug\BloodPressure.dll
+C:\Users\mostafax\Desktop\Blood-Pressure-system\BloodPressure\obj\Debug\BloodPressure.pdb
