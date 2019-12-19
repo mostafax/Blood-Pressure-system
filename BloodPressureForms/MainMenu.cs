@@ -36,6 +36,7 @@ namespace BloodPressureForms
             this.Hide();
         }
 
+        async
         private void pictureBox5_Click(object sender, EventArgs e)
         {
             
