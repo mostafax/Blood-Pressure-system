@@ -16,3 +16,23 @@ D:\First Term - 4th Year\SW Architecture\Project\Blood-Pressure-system\BloodPres
 D:\First Term - 4th Year\SW Architecture\Project\Blood-Pressure-system\BloodPressureForms\obj\Debug\BloodPressureForms.exe
 D:\First Term - 4th Year\SW Architecture\Project\Blood-Pressure-system\BloodPressureForms\obj\Debug\BloodPressureForms.pdb
 D:\First Term - 4th Year\SW Architecture\Project\Blood-Pressure-system\BloodPressureForms\obj\Debug\BloodPressureForms.Wasfety.resources
+C:\Users\mostafax\Desktop\Blood-Pressure-system\BloodPressureForms\obj\Debug\BloodPressureForms.csprojAssemblyReference.cache
+C:\Users\mostafax\Desktop\Blood-Pressure-system\BloodPressureForms\obj\Debug\BloodPressureForms.Login.resources
+C:\Users\mostafax\Desktop\Blood-Pressure-system\BloodPressureForms\obj\Debug\BloodPressureForms.MainMenu.resources
+C:\Users\mostafax\Desktop\Blood-Pressure-system\BloodPressureForms\obj\Debug\BloodPressureForms.Properties.Resources.resources
+C:\Users\mostafax\Desktop\Blood-Pressure-system\BloodPressureForms\obj\Debug\BloodPressureForms.Register.resources
+C:\Users\mostafax\Desktop\Blood-Pressure-system\BloodPressureForms\obj\Debug\BloodPressureForms.UserDetails.resources
+C:\Users\mostafax\Desktop\Blood-Pressure-system\BloodPressureForms\obj\Debug\BloodPressureForms.UserProfile.resources
+C:\Users\mostafax\Desktop\Blood-Pressure-system\BloodPressureForms\obj\Debug\BloodPressureForms.wasfety.resources
+C:\Users\mostafax\Desktop\Blood-Pressure-system\BloodPressureForms\obj\Debug\BloodPressureForms.csproj.GenerateResource.cache
+C:\Users\mostafax\Desktop\Blood-Pressure-system\BloodPressureForms\obj\Debug\BloodPressureForms.exe
+C:\Users\mostafax\Desktop\Blood-Pressure-system\BloodPressureForms\obj\Debug\BloodPressureForms.pdb
+C:\Users\mostafax\Desktop\Blood-Pressure-system\BloodPressureForms\bin\Debug\BloodPressureForms.exe.config
+C:\Users\mostafax\Desktop\Blood-Pressure-system\BloodPressureForms\bin\Debug\BloodPressureForms.exe
+C:\Users\mostafax\Desktop\Blood-Pressure-system\BloodPressureForms\bin\Debug\BloodPressureForms.pdb
+C:\Users\mostafax\Desktop\Blood-Pressure-system\BloodPressureForms\bin\Debug\BloodPressure.dll
+C:\Users\mostafax\Desktop\Blood-Pressure-system\BloodPressureForms\bin\Debug\Newtonsoft.Json.dll
+C:\Users\mostafax\Desktop\Blood-Pressure-system\BloodPressureForms\bin\Debug\BloodPressure.pdb
+C:\Users\mostafax\Desktop\Blood-Pressure-system\BloodPressureForms\bin\Debug\BloodPressure.dll.config
+C:\Users\mostafax\Desktop\Blood-Pressure-system\BloodPressureForms\bin\Debug\Newtonsoft.Json.xml
+C:\Users\mostafax\Desktop\Blood-Pressure-system\BloodPressureForms\obj\Debug\BloodPressureForms.csproj.CopyComplete

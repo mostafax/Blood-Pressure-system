@@ -178,7 +178,6 @@
             this.Wasfety.Text = "Check Meal";
             this.Wasfety.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.Wasfety.UseVisualStyleBackColor = false;
-            this.Wasfety.Click += new System.EventHandler(this.Wasfety_Click);
             // 
             // BloodPressure_Panel
             // 

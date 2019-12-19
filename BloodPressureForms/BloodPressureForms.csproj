@@ -33,10 +33,14 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\BloodPressure\packages\Newtonsoft.Json.12.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Web.Extensions" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -85,11 +89,11 @@
     <Compile Include="UserProfile.Designer.cs">
       <DependentUpon>UserProfile.cs</DependentUpon>
     </Compile>
-    <Compile Include="Wasfety.cs">
+    <Compile Include="wasfety.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Wasfety.Designer.cs">
-      <DependentUpon>Wasfety.cs</DependentUpon>
+    <Compile Include="wasfety.Designer.cs">
+      <DependentUpon>wasfety.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
@@ -115,8 +119,8 @@
     <EmbeddedResource Include="UserProfile.resx">
       <DependentUpon>UserProfile.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Wasfety.resx">
-      <DependentUpon>Wasfety.cs</DependentUpon>
+    <EmbeddedResource Include="wasfety.resx">
+      <DependentUpon>wasfety.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Connected Services\CRUDService\CRUD.wsdl" />
     <None Include="Connected Services\CRUDService\CRUD.xsd">
@@ -131,6 +135,7 @@
     <None Include="Connected Services\CRUDService\CRUD3.xsd">
       <SubType>Designer</SubType>
     </None>
+    <None Include="packages.config" />
     <None Include="Properties\DataSources\BloodPressure.BloodTrack.datasource" />
     <None Include="Properties\DataSources\BloodPressure.Person.datasource" />
     <None Include="Properties\Settings.settings">

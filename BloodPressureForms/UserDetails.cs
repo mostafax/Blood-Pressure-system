@@ -29,12 +29,7 @@ namespace BloodPressureForms
             
         }
 
-        private void Wasfety_Click(object sender, EventArgs e)
-        {
-            Wasfety wasfety = new Wasfety();
-            wasfety.Show();
-            this.Hide();
-        }
+
 
         private void button2_Click(object sender, EventArgs e)
         {
