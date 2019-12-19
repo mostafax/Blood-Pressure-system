@@ -39,11 +39,11 @@
             this.button3 = new System.Windows.Forms.Button();
             this.Wasfety = new System.Windows.Forms.Button();
             this.BloodPressure_Panel = new System.Windows.Forms.Panel();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
             this.button4 = new System.Windows.Forms.Button();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
             this.DietMeal_Panel = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -145,6 +145,7 @@
             this.button1.Text = "Update Blood Pressure";
             this.button1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button3
             // 
@@ -187,23 +188,34 @@
             this.BloodPressure_Panel.Controls.Add(this.label2);
             this.BloodPressure_Panel.Controls.Add(this.label5);
             this.BloodPressure_Panel.Enabled = false;
-            this.BloodPressure_Panel.Location = new System.Drawing.Point(139, 128);
+            this.BloodPressure_Panel.Location = new System.Drawing.Point(130, 128);
             this.BloodPressure_Panel.Name = "BloodPressure_Panel";
-            this.BloodPressure_Panel.Size = new System.Drawing.Size(522, 243);
+            this.BloodPressure_Panel.Size = new System.Drawing.Size(531, 243);
             this.BloodPressure_Panel.TabIndex = 56;
             this.BloodPressure_Panel.Visible = false;
             // 
-            // label5
+            // button4
             // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.label5.Location = new System.Drawing.Point(30, 49);
-            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(210, 20);
-            this.label5.TabIndex = 31;
-            this.label5.Text = "Current High Blood Pressure";
+            this.button4.Location = new System.Drawing.Point(175, 169);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(75, 23);
+            this.button4.TabIndex = 36;
+            this.button4.Text = "Update";
+            this.button4.UseVisualStyleBackColor = true;
+            // 
+            // textBox2
+            // 
+            this.textBox2.Location = new System.Drawing.Point(271, 103);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(100, 20);
+            this.textBox2.TabIndex = 35;
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(271, 50);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(100, 20);
+            this.textBox1.TabIndex = 34;
             // 
             // label2
             // 
@@ -217,34 +229,23 @@
             this.label2.TabIndex = 33;
             this.label2.Text = "Current Low Blood Pressure";
             // 
-            // textBox1
+            // label5
             // 
-            this.textBox1.Location = new System.Drawing.Point(271, 50);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 34;
-            // 
-            // textBox2
-            // 
-            this.textBox2.Location = new System.Drawing.Point(271, 103);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 20);
-            this.textBox2.TabIndex = 35;
-            // 
-            // button4
-            // 
-            this.button4.Location = new System.Drawing.Point(175, 169);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(75, 23);
-            this.button4.TabIndex = 36;
-            this.button4.Text = "Update";
-            this.button4.UseVisualStyleBackColor = true;
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.label5.Location = new System.Drawing.Point(30, 49);
+            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(210, 20);
+            this.label5.TabIndex = 31;
+            this.label5.Text = "Current High Blood Pressure";
             // 
             // DietMeal_Panel
             // 
-            this.DietMeal_Panel.Location = new System.Drawing.Point(142, 131);
+            this.DietMeal_Panel.Location = new System.Drawing.Point(133, 131);
             this.DietMeal_Panel.Name = "DietMeal_Panel";
-            this.DietMeal_Panel.Size = new System.Drawing.Size(457, 237);
+            this.DietMeal_Panel.Size = new System.Drawing.Size(436, 237);
             this.DietMeal_Panel.TabIndex = 57;
             this.DietMeal_Panel.Visible = false;
             this.DietMeal_Panel.Paint += new System.Windows.Forms.PaintEventHandler(this.DietMeal_Panel_Paint);

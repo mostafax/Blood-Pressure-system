@@ -24,7 +24,7 @@ namespace BloodPressureForms
 
         private void button5_Click(object sender, EventArgs e)
         {
-            BloodPressure_Panel.Show();
+            
             
             
         }
@@ -44,6 +44,11 @@ namespace BloodPressureForms
         private void button3_Click(object sender, EventArgs e)
         {
             DietMeal_Panel.Show();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            BloodPressure_Panel.Show();
         }
     }
 }

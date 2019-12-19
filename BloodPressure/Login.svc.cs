@@ -4,6 +4,7 @@ using System.Linq;
 using System.Runtime.Serialization;
 using System.ServiceModel;
 using System.Text;
+using System.Data.SqlClient;
 
 namespace BloodPressure
 {
@@ -14,9 +15,27 @@ namespace BloodPressure
         //TODO .. impelemt Login Function -> return -1 if not valid else return PersonID. 
         // Note -> For using Any of CRUD methods You Can Do As Follwing :
         //  CRUD crudMethods = new CRUD();
-        int ILogin.Login(string Email)
+        static string connString = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=D:\\First Term - 4th Year\\SW Architecture\\Project\\Blood-Pressure-system\\BloodPressure\\App_Data\\BloodPressure.mdf;Integrated Security=True";
+        SqlConnection sqlConn = new SqlConnection(connString);
+        int ILogin.Login(string Email, string Password)
         {
-            throw new NotImplementedException();
+            sqlConn.Open();
+            SqlCommand cmd = new SqlCommand("SELECT PersonID,Email,password FROM Person  WHERE Person.Email = @Email AND Person.Password = @Password  ", sqlConn);
+            cmd.Parameters.AddWithValue("@Email", Email);
+            cmd.Parameters.AddWithValue("@Password", Password);
+
+            SqlDataReader reader;
+            reader = cmd.ExecuteReader();
+            int r = 0;
+            while (reader.Read())
+            {
+                r = reader.GetInt32(0);
+                return r;
+
+            }
+            sqlConn.Close();
+            
+            return -1; 
         }
     }
 }
