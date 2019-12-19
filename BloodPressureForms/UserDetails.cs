@@ -10,7 +10,7 @@ using System.Windows.Forms;
 
 namespace BloodPressureForms
 {
-    public partial class UserDetails : Form
+    public partial class UserDetails : Form 
     {
         public UserDetails()
         {
@@ -51,6 +51,7 @@ namespace BloodPressureForms
             BloodPressure_Panel.Show();
         }
 
+        
         private void pictureBox3_Click(object sender, EventArgs e)
         {
             Login login = new Login();
