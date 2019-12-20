@@ -18,24 +18,3 @@ C:\Users\mostafax\Desktop\Blood-Pressure-system\BloodPressureForms\bin\Debug\Blo
 C:\Users\mostafax\Desktop\Blood-Pressure-system\BloodPressureForms\bin\Debug\BloodPressure.dll.config
 C:\Users\mostafax\Desktop\Blood-Pressure-system\BloodPressureForms\bin\Debug\Newtonsoft.Json.xml
 C:\Users\mostafax\Desktop\Blood-Pressure-system\BloodPressureForms\obj\Debug\BloodPressureForms.csproj.CopyComplete
-D:\First Term - 4th Year\SW Architecture\Project\Blood-Pressure-system\BloodPressureForms\bin\Debug\BloodPressureForms.exe.config
-D:\First Term - 4th Year\SW Architecture\Project\Blood-Pressure-system\BloodPressureForms\bin\Debug\BloodPressureForms.exe
-D:\First Term - 4th Year\SW Architecture\Project\Blood-Pressure-system\BloodPressureForms\bin\Debug\BloodPressureForms.pdb
-D:\First Term - 4th Year\SW Architecture\Project\Blood-Pressure-system\BloodPressureForms\bin\Debug\BloodPressure.dll
-D:\First Term - 4th Year\SW Architecture\Project\Blood-Pressure-system\BloodPressureForms\bin\Debug\Newtonsoft.Json.dll
-D:\First Term - 4th Year\SW Architecture\Project\Blood-Pressure-system\BloodPressureForms\bin\Debug\BloodPressure.pdb
-D:\First Term - 4th Year\SW Architecture\Project\Blood-Pressure-system\BloodPressureForms\bin\Debug\BloodPressure.dll.config
-D:\First Term - 4th Year\SW Architecture\Project\Blood-Pressure-system\BloodPressureForms\bin\Debug\Newtonsoft.Json.xml
-D:\First Term - 4th Year\SW Architecture\Project\Blood-Pressure-system\BloodPressureForms\obj\Debug\BloodPressureForms.csprojAssemblyReference.cache
-D:\First Term - 4th Year\SW Architecture\Project\Blood-Pressure-system\BloodPressureForms\obj\Debug\BloodPressureForms.Login.resources
-D:\First Term - 4th Year\SW Architecture\Project\Blood-Pressure-system\BloodPressureForms\obj\Debug\BloodPressureForms.MainMenu.resources
-D:\First Term - 4th Year\SW Architecture\Project\Blood-Pressure-system\BloodPressureForms\obj\Debug\BloodPressureForms.Properties.Resources.resources
-D:\First Term - 4th Year\SW Architecture\Project\Blood-Pressure-system\BloodPressureForms\obj\Debug\BloodPressureForms.Register.resources
-D:\First Term - 4th Year\SW Architecture\Project\Blood-Pressure-system\BloodPressureForms\obj\Debug\BloodPressureForms.UserDetails.resources
-D:\First Term - 4th Year\SW Architecture\Project\Blood-Pressure-system\BloodPressureForms\obj\Debug\BloodPressureForms.UserProfile.resources
-D:\First Term - 4th Year\SW Architecture\Project\Blood-Pressure-system\BloodPressureForms\obj\Debug\BloodPressureForms.wasfety.resources
-D:\First Term - 4th Year\SW Architecture\Project\Blood-Pressure-system\BloodPressureForms\obj\Debug\BloodPressureForms.csproj.GenerateResource.cache
-D:\First Term - 4th Year\SW Architecture\Project\Blood-Pressure-system\BloodPressureForms\obj\Debug\BloodPressureForms.csproj.CopyComplete
-D:\First Term - 4th Year\SW Architecture\Project\Blood-Pressure-system\BloodPressureForms\obj\Debug\BloodPressureForms.exe
-D:\First Term - 4th Year\SW Architecture\Project\Blood-Pressure-system\BloodPressureForms\obj\Debug\BloodPressureForms.pdb
-D:\First Term - 4th Year\SW Architecture\Project\Blood-Pressure-system\BloodPressureForms\obj\Debug\BloodPressureForms.DietMeals.resources
