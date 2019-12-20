@@ -39,16 +39,16 @@
             this.button3 = new System.Windows.Forms.Button();
             this.Wasfety = new System.Windows.Forms.Button();
             this.BloodPressure_Panel = new System.Windows.Forms.Panel();
-            this.button4 = new System.Windows.Forms.Button();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.DietMeal_Panel = new System.Windows.Forms.Panel();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.BloodPressure_Panel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             this.SuspendLayout();
             // 
             // pictureBox1
@@ -183,73 +183,62 @@
             // 
             // BloodPressure_Panel
             // 
-            this.BloodPressure_Panel.Controls.Add(this.button4);
+            this.BloodPressure_Panel.Controls.Add(this.pictureBox4);
             this.BloodPressure_Panel.Controls.Add(this.textBox2);
             this.BloodPressure_Panel.Controls.Add(this.textBox1);
             this.BloodPressure_Panel.Controls.Add(this.label2);
-            this.BloodPressure_Panel.Controls.Add(this.label5);
-            this.BloodPressure_Panel.Enabled = false;
-            this.BloodPressure_Panel.Location = new System.Drawing.Point(130, 191);
+            this.BloodPressure_Panel.Controls.Add(this.label1);
+            this.BloodPressure_Panel.Location = new System.Drawing.Point(109, 128);
             this.BloodPressure_Panel.Name = "BloodPressure_Panel";
-            this.BloodPressure_Panel.Size = new System.Drawing.Size(531, 180);
+            this.BloodPressure_Panel.Size = new System.Drawing.Size(500, 229);
             this.BloodPressure_Panel.TabIndex = 56;
             this.BloodPressure_Panel.Visible = false;
             // 
-            // button4
+            // label1
             // 
-            this.button4.Location = new System.Drawing.Point(175, 169);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(75, 23);
-            this.button4.TabIndex = 36;
-            this.button4.Text = "Update";
-            this.button4.UseVisualStyleBackColor = true;
-            // 
-            // textBox2
-            // 
-            this.textBox2.Location = new System.Drawing.Point(271, 103);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 20);
-            this.textBox2.TabIndex = 35;
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(271, 50);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 34;
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label1.Location = new System.Drawing.Point(11, 52);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(221, 21);
+            this.label1.TabIndex = 2;
+            this.label1.Text = "Current High Blood Pressure";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.label2.Location = new System.Drawing.Point(30, 103);
-            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label2.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label2.Location = new System.Drawing.Point(11, 113);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(209, 20);
-            this.label2.TabIndex = 33;
+            this.label2.Size = new System.Drawing.Size(217, 21);
+            this.label2.TabIndex = 3;
             this.label2.Text = "Current Low Blood Pressure";
             // 
-            // label5
+            // textBox1
             // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.label5.Location = new System.Drawing.Point(30, 49);
-            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(210, 20);
-            this.label5.TabIndex = 31;
-            this.label5.Text = "Current High Blood Pressure";
+            this.textBox1.Location = new System.Drawing.Point(260, 55);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(120, 20);
+            this.textBox1.TabIndex = 4;
             // 
-            // DietMeal_Panel
+            // textBox2
             // 
-            this.DietMeal_Panel.Location = new System.Drawing.Point(133, 233);
-            this.DietMeal_Panel.Name = "DietMeal_Panel";
-            this.DietMeal_Panel.Size = new System.Drawing.Size(479, 135);
-            this.DietMeal_Panel.TabIndex = 57;
-            this.DietMeal_Panel.Visible = false;
-            this.DietMeal_Panel.Paint += new System.Windows.Forms.PaintEventHandler(this.DietMeal_Panel_Paint);
+            this.textBox2.Location = new System.Drawing.Point(260, 113);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(120, 20);
+            this.textBox2.TabIndex = 5;
+            // 
+            // pictureBox4
+            // 
+            this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
+            this.pictureBox4.Location = new System.Drawing.Point(145, 157);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(192, 69);
+            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox4.TabIndex = 62;
+            this.pictureBox4.TabStop = false;
             // 
             // UserDetails
             // 
@@ -257,7 +246,6 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Navy;
             this.ClientSize = new System.Drawing.Size(692, 383);
-            this.Controls.Add(this.DietMeal_Panel);
             this.Controls.Add(this.BloodPressure_Panel);
             this.Controls.Add(this.Wasfety);
             this.Controls.Add(this.button3);
@@ -272,11 +260,13 @@
             this.Name = "UserDetails";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "UserDetails";
+            this.Load += new System.EventHandler(this.UserDetails_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.BloodPressure_Panel.ResumeLayout(false);
             this.BloodPressure_Panel.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -294,11 +284,10 @@
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button Wasfety;
         private System.Windows.Forms.Panel BloodPressure_Panel;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Panel DietMeal_Panel;
+        private System.Windows.Forms.PictureBox pictureBox4;
     }
 }

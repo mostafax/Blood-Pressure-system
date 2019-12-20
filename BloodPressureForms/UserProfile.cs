@@ -55,5 +55,29 @@ namespace BloodPressureForms
 
 
         }
+
+        private void pictureBox4_Click(object sender, EventArgs e)
+        {
+            CRUDService.CRUDClient crud = new CRUDService.CRUDClient();
+            Person p = new Person();
+            p.Name = NameBox.Text;
+            p.Age = int.Parse(AgeBox.Text);
+            p.Weight = float.Parse(WeightBox.Text);
+            p.Gender = GenderBox.Text;
+            p.Email = EmailBox.Text;
+            p.Password = PasswordBox.Text;
+            p.PersonID = Login.Person_ID;
+            int done = crud.updatePerson(p);
+            if (done == 1 )
+            {
+              MessageBox.Show("Updated Sucessfully");
+            }
+            else
+            {
+                MessageBox.Show("No Modifications Found");
+            }
+
+
+        }
     }
 }

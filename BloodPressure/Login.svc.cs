@@ -30,11 +30,12 @@ namespace BloodPressure
             while (reader.Read())
             {
                 r = reader.GetInt32(0);
+                sqlConn.Close();
                 return r;
 
             }
+
             sqlConn.Close();
-            
             return -1; 
         }
     }

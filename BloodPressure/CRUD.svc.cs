@@ -130,10 +130,10 @@ namespace BloodPressure
             sqlConn.Close();
         }
 
-        public void updatePerson(Person p)
+        public int updatePerson(Person p)
         {
             sqlConn.Open();
-            SqlCommand cmd = new SqlCommand("update Person set Name = @Name, Age = @Age,Weight = @Weight,Gender = @Gender,Email =@Email, Password=@Password,DietID = @DietID where Person.PersonID = @PersonID;", sqlConn);
+            SqlCommand cmd = new SqlCommand("update Person set Name = @Name, Age = @Age,Weight = @Weight,Gender = @Gender,Email =@Email, Password=@Password where Person.PersonID = @PersonID;", sqlConn);
 
             cmd.Parameters.AddWithValue("@Name", p.Name);
             cmd.Parameters.AddWithValue("@Age", p.Age);
@@ -141,10 +141,21 @@ namespace BloodPressure
             cmd.Parameters.AddWithValue("@Gender", p.Gender);
             cmd.Parameters.AddWithValue("@Email", p.Email);
             cmd.Parameters.AddWithValue("@Password", p.Password);
-            cmd.Parameters.AddWithValue("@DietID", p.DietID);
+           // cmd.Parameters.AddWithValue("@DietID", p.DietID);
             cmd.Parameters.AddWithValue("@PersonID", p.PersonID);
-            cmd.ExecuteNonQuery();
-            sqlConn.Close();
+            int done = cmd.ExecuteNonQuery();
+            if (done == 1)
+            {
+                sqlConn.Close();
+                return 1;
+            }
+            else
+            {
+                sqlConn.Close();
+                return -1;
+            }
+
+            
         }
 
         public List<BloodTrack> viewPersonBloodPressure(int PersonID)

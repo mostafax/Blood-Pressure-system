@@ -70,10 +70,10 @@ namespace BloodPressureForms.CRUDService {
         System.Threading.Tasks.Task<string[]> getObserversAsync();
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/ICRUD/updatePerson", ReplyAction="http://tempuri.org/ICRUD/updatePersonResponse")]
-        void updatePerson(BloodPressure.Person p);
+        int updatePerson(BloodPressure.Person p);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/ICRUD/updatePerson", ReplyAction="http://tempuri.org/ICRUD/updatePersonResponse")]
-        System.Threading.Tasks.Task updatePersonAsync(BloodPressure.Person p);
+        System.Threading.Tasks.Task<int> updatePersonAsync(BloodPressure.Person p);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/ICRUD/getSuitableDiet", ReplyAction="http://tempuri.org/ICRUD/getSuitableDietResponse")]
         int getSuitableDiet(float Pressure);
@@ -187,11 +187,11 @@ namespace BloodPressureForms.CRUDService {
             return base.Channel.getObserversAsync();
         }
         
-        public void updatePerson(BloodPressure.Person p) {
-            base.Channel.updatePerson(p);
+        public int updatePerson(BloodPressure.Person p) {
+            return base.Channel.updatePerson(p);
         }
         
-        public System.Threading.Tasks.Task updatePersonAsync(BloodPressure.Person p) {
+        public System.Threading.Tasks.Task<int> updatePersonAsync(BloodPressure.Person p) {
             return base.Channel.updatePersonAsync(p);
         }
         

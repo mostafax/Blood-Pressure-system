@@ -38,7 +38,7 @@ namespace BloodPressure
         List<string> getObservers();
 
         [OperationContract]
-        void updatePerson(Person p);
+        int updatePerson(Person p);
 
         [OperationContract]
         int getSuitableDiet(float Pressure);

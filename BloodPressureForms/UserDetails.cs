@@ -45,7 +45,9 @@ namespace BloodPressureForms
 
         private void button3_Click(object sender, EventArgs e)
         {
-            DietMeal_Panel.Show();
+            DietMeals dietMeals = new DietMeals();
+            dietMeals.Show();
+            this.Hide();
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -56,9 +58,19 @@ namespace BloodPressureForms
         
         private void pictureBox3_Click(object sender, EventArgs e)
         {
-            Login login = new Login();
-            login.Show();
+            UserDetails userDetails = new UserDetails();
+            userDetails.Show();
             this.Hide();
+        }
+
+        private void UserDetails_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void DietMeal_Panel_Paint_1(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }
