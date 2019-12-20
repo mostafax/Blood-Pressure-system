@@ -35,7 +35,9 @@ namespace BloodPressureForms
 
         private void button2_Click(object sender, EventArgs e)
         {
-            
+            HistoryBloodPressure HB = new HistoryBloodPressure();
+            HB.Show();
+            this.Hide();
         }
 
         private void DietMeal_Panel_Paint(object sender, PaintEventArgs e)

@@ -69,6 +69,12 @@
     <Compile Include="DietMeals.Designer.cs">
       <DependentUpon>DietMeals.cs</DependentUpon>
     </Compile>
+    <Compile Include="HistoryBloodPressure.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HistoryBloodPressure.Designer.cs">
+      <DependentUpon>HistoryBloodPressure.cs</DependentUpon>
+    </Compile>
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -109,6 +115,9 @@
     </Compile>
     <EmbeddedResource Include="DietMeals.resx">
       <DependentUpon>DietMeals.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HistoryBloodPressure.resx">
+      <DependentUpon>HistoryBloodPressure.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
