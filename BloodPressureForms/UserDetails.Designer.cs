@@ -189,9 +189,9 @@
             this.BloodPressure_Panel.Controls.Add(this.label2);
             this.BloodPressure_Panel.Controls.Add(this.label5);
             this.BloodPressure_Panel.Enabled = false;
-            this.BloodPressure_Panel.Location = new System.Drawing.Point(130, 128);
+            this.BloodPressure_Panel.Location = new System.Drawing.Point(130, 191);
             this.BloodPressure_Panel.Name = "BloodPressure_Panel";
-            this.BloodPressure_Panel.Size = new System.Drawing.Size(531, 243);
+            this.BloodPressure_Panel.Size = new System.Drawing.Size(531, 180);
             this.BloodPressure_Panel.TabIndex = 56;
             this.BloodPressure_Panel.Visible = false;
             // 
@@ -244,9 +244,9 @@
             // 
             // DietMeal_Panel
             // 
-            this.DietMeal_Panel.Location = new System.Drawing.Point(133, 131);
+            this.DietMeal_Panel.Location = new System.Drawing.Point(133, 233);
             this.DietMeal_Panel.Name = "DietMeal_Panel";
-            this.DietMeal_Panel.Size = new System.Drawing.Size(436, 237);
+            this.DietMeal_Panel.Size = new System.Drawing.Size(479, 135);
             this.DietMeal_Panel.TabIndex = 57;
             this.DietMeal_Panel.Visible = false;
             this.DietMeal_Panel.Paint += new System.Windows.Forms.PaintEventHandler(this.DietMeal_Panel_Paint);

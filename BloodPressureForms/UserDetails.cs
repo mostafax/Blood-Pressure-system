@@ -24,7 +24,9 @@ namespace BloodPressureForms
 
         private void button5_Click(object sender, EventArgs e)
         {
-            
+            UserProfile userProfile = new UserProfile();
+            userProfile.Show();
+            this.Hide();
             
             
         }

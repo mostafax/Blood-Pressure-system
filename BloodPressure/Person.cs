@@ -11,7 +11,7 @@ namespace BloodPressure
         public Person(SqlDataReader Result, SqlConnection sqlConn)
         {
             this.PersonID = int.Parse(Result["PersonID"].ToString());
-            this.DietID = int.Parse(Result["DietID"].ToString());
+            //this.DietID = int.Parse(Result["DietID"].ToString());
             this.Name = Result["Name"].ToString();
             this.Age = int.Parse(Result["Age"].ToString());
             this.Email = Result["Email"].ToString();

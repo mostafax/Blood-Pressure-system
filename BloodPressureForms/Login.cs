@@ -12,9 +12,11 @@ namespace BloodPressureForms
 {
     public partial class Login : Form
     {
+        public static int Person_ID;
         public Login()
         {
             InitializeComponent();
+            PasswordBox.PasswordChar = '*';
         }
 
         private void pictureBox2_Click(object sender, EventArgs e)
@@ -40,6 +42,7 @@ namespace BloodPressureForms
             }
             else
             {
+                Person_ID = ID;
                 UserDetails userDetails = new UserDetails();
                 userDetails.Show();
                 this.Hide();
