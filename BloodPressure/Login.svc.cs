@@ -17,11 +17,11 @@ namespace BloodPressure
         //  CRUD crudMethods = new CRUD();
         static string connString = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=D:\\First Term - 4th Year\\SW Architecture\\Project\\Blood-Pressure-system\\BloodPressure\\App_Data\\BloodPressure.mdf;Integrated Security=True";
         SqlConnection sqlConn = new SqlConnection(connString);
-        int ILogin.Login(string Email, string Password)
+        int ILogin.Login(string Name, string Password)
         {
             sqlConn.Open();
-            SqlCommand cmd = new SqlCommand("SELECT PersonID,Email,password FROM Person  WHERE Person.Email = @Email AND Person.Password = @Password  ", sqlConn);
-            cmd.Parameters.AddWithValue("@Email", Email);
+            SqlCommand cmd = new SqlCommand("SELECT PersonID,Name,password FROM Person  WHERE Person.Name = @Name AND Person.Password = @Password  ", sqlConn);
+            cmd.Parameters.AddWithValue("@Name", Name);
             cmd.Parameters.AddWithValue("@Password", Password);
 
             SqlDataReader reader;

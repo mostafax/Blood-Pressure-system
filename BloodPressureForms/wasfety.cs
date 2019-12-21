@@ -30,6 +30,11 @@ namespace BloodPressureForms
         private void button1_Click(object sender, EventArgs e)
         {
 
+            
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
             textBox1.Text = "";
 
             List<string> preventors = new List<string>() {

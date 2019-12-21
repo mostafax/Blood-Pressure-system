@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using BloodPressure;
 
 namespace BloodPressureForms
 {
@@ -60,14 +61,19 @@ namespace BloodPressureForms
         
         private void pictureBox3_Click(object sender, EventArgs e)
         {
-            UserDetails userDetails = new UserDetails();
-            userDetails.Show();
+            Login login = new Login();
+            login.Show();
             this.Hide();
         }
 
         private void UserDetails_Load(object sender, EventArgs e)
         {
+            Person p = new Person();
+            CRUDService.CRUDClient crud = new CRUDService.CRUDClient();
 
+            p = crud.viewPersonInfo(Login.Person_ID);
+            UserName_Label.Text = p.Name;
+            
         }
 
         private void DietMeal_Panel_Paint_1(object sender, PaintEventArgs e)

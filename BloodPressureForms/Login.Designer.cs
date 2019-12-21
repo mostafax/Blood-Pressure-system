@@ -30,9 +30,9 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Login));
             this.PasswordBox = new System.Windows.Forms.TextBox();
-            this.EmailBox = new System.Windows.Forms.TextBox();
+            this.UsernameBox = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
+            this.l = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.label4 = new System.Windows.Forms.Label();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
@@ -52,39 +52,39 @@
             this.PasswordBox.Size = new System.Drawing.Size(168, 25);
             this.PasswordBox.TabIndex = 39;
             // 
-            // EmailBox
+            // UsernameBox
             // 
-            this.EmailBox.BackColor = System.Drawing.Color.Gainsboro;
-            this.EmailBox.Font = new System.Drawing.Font("Century Gothic", 10.8F);
-            this.EmailBox.Location = new System.Drawing.Point(263, 135);
-            this.EmailBox.Margin = new System.Windows.Forms.Padding(2);
-            this.EmailBox.Name = "EmailBox";
-            this.EmailBox.Size = new System.Drawing.Size(168, 25);
-            this.EmailBox.TabIndex = 38;
+            this.UsernameBox.BackColor = System.Drawing.Color.Gainsboro;
+            this.UsernameBox.Font = new System.Drawing.Font("Century Gothic", 10.8F);
+            this.UsernameBox.Location = new System.Drawing.Point(263, 135);
+            this.UsernameBox.Margin = new System.Windows.Forms.Padding(2);
+            this.UsernameBox.Name = "UsernameBox";
+            this.UsernameBox.Size = new System.Drawing.Size(168, 25);
+            this.UsernameBox.TabIndex = 38;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.label1.Location = new System.Drawing.Point(180, 208);
+            this.label1.Location = new System.Drawing.Point(167, 205);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(79, 20);
             this.label1.TabIndex = 37;
             this.label1.Text = "Password";
             // 
-            // label5
+            // l
             // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.label5.Location = new System.Drawing.Point(180, 138);
-            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(46, 20);
-            this.label5.TabIndex = 36;
-            this.label5.Text = "Email";
+            this.l.AutoSize = true;
+            this.l.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.l.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.l.Location = new System.Drawing.Point(163, 138);
+            this.l.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.l.Name = "l";
+            this.l.Size = new System.Drawing.Size(83, 20);
+            this.l.TabIndex = 36;
+            this.l.Text = "Username";
             // 
             // pictureBox2
             // 
@@ -139,9 +139,9 @@
             this.ClientSize = new System.Drawing.Size(595, 430);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.PasswordBox);
-            this.Controls.Add(this.EmailBox);
+            this.Controls.Add(this.UsernameBox);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.label5);
+            this.Controls.Add(this.l);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.pictureBox3);
@@ -160,9 +160,9 @@
         #endregion
 
         public System.Windows.Forms.TextBox PasswordBox;
-        public System.Windows.Forms.TextBox EmailBox;
+        public System.Windows.Forms.TextBox UsernameBox;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label l;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.PictureBox pictureBox3;

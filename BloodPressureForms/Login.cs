@@ -35,10 +35,10 @@ namespace BloodPressureForms
         {
 
             LoginService.LoginClient login = new LoginService.LoginClient();
-            int ID = login.Login(EmailBox.Text, PasswordBox.Text);
+            int ID = login.Login(UsernameBox.Text, PasswordBox.Text);
             if (ID == -1)
             {
-                MessageBox.Show("Invalid Email or Password");
+                MessageBox.Show("Invalid Username or Password");
             }
             else
             {

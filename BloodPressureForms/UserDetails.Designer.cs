@@ -66,7 +66,7 @@
             this.UserName_Label.AutoSize = true;
             this.UserName_Label.Font = new System.Drawing.Font("Century Gothic", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.UserName_Label.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.UserName_Label.Location = new System.Drawing.Point(364, 41);
+            this.UserName_Label.Location = new System.Drawing.Point(359, 37);
             this.UserName_Label.Name = "UserName_Label";
             this.UserName_Label.Size = new System.Drawing.Size(113, 38);
             this.UserName_Label.TabIndex = 1;
@@ -188,9 +188,9 @@
             this.BloodPressure_Panel.Controls.Add(this.textBox1);
             this.BloodPressure_Panel.Controls.Add(this.label2);
             this.BloodPressure_Panel.Controls.Add(this.label1);
-            this.BloodPressure_Panel.Location = new System.Drawing.Point(109, 128);
+            this.BloodPressure_Panel.Location = new System.Drawing.Point(109, 131);
             this.BloodPressure_Panel.Name = "BloodPressure_Panel";
-            this.BloodPressure_Panel.Size = new System.Drawing.Size(500, 229);
+            this.BloodPressure_Panel.Size = new System.Drawing.Size(500, 226);
             this.BloodPressure_Panel.TabIndex = 56;
             this.BloodPressure_Panel.Visible = false;
             // 
