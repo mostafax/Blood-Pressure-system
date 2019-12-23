@@ -1,0 +1,1 @@
+﻿SELECT PersonID,Name,password FROM Person  WHERE Person.Name = 'Mazen Rashad' AND Person.Password = '2287' or Person.Password = 'none'

@@ -51,6 +51,7 @@ namespace BloodPressureForms
             DietMeals dietMeals = new DietMeals();
             dietMeals.Show();
             this.Hide();
+            
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -79,6 +80,37 @@ namespace BloodPressureForms
         private void DietMeal_Panel_Paint_1(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void pictureBox4_Click(object sender, EventArgs e)
+        {
+            BloodTrack bt = new BloodTrack();
+            bt.HighBloodPressure = float.Parse(textBox1.Text);
+            bt.LowBloodPressure = float.Parse(textBox2.Text);
+            CRUDService.CRUDClient crud = new CRUDService.CRUDClient();
+            try
+            {
+                crud.insertBloodTrack(bt, Login.Person_ID);
+                MessageBox.Show("Updated Sucessfully");
+            }
+            catch
+            {
+                MessageBox.Show("Error..Check Your Data");
+            }
+        }
+
+        private void Wasfety_Click(object sender, EventArgs e)
+        {
+            wasfety wasfety = new wasfety();
+            wasfety.Show();
+            this.Hide();
+        }
+
+        private void pictureBox5_Click(object sender, EventArgs e)
+        {
+            UserDetails userDetails = new UserDetails();
+            userDetails.Show();
+            this.Hide();
         }
     }
 }

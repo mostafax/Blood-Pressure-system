@@ -37,24 +37,51 @@ namespace BloodPressureForms
         private void pictureBox4_Click(object sender, EventArgs e)
         {
 
-            Login login = new Login();
-            login.Show();
-            this.Hide();
-
-
             CRUDService.CRUDClient crud = new CRUDService.CRUDClient();
             Person p = new Person();
+
+            if (Program.MakeHiden)
+            {
+                p.Email = "none";
+                p.Password = "none";
+            }
+            else
+            {
+                p.Email = EmailBox.Text;
+                p.Password = PasswordBox.Text;
+            }
+
             p.Name = NameBox.Text;
             p.Age = int.Parse(AgeBox.Text);
             p.Weight = float.Parse(WeightBox.Text);
             p.Gender = GenderBox.Text;
-            p.Email = EmailBox.Text;
-            p.Password = PasswordBox.Text;
 
-            int Person_ID = crud.insertPerson(p);
+            if (!crud.validName(NameBox.Text))
+            {
+                Login.Person_ID = crud.insertPerson(p);
+                Login login = new Login();
+                login.Show();
+                this.Hide();
+            }
+            else
+                MessageBox.Show("User Name is aready exist.");
 
             
-            
+
+
+        }
+
+        private void Register_Load(object sender, EventArgs e)
+        {
+            if (Program.MakeHiden == true)
+            {
+                label6.Visible = false;
+                label7.Visible = false;
+                NameBox.ReadOnly = true;
+                NameBox.Text = Program.PersonName;
+                EmailBox.Visible = false;
+                PasswordBox.Visible = false;
+            }
         }
     }
 }

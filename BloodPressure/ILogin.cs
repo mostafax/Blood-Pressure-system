@@ -11,7 +11,7 @@ namespace BloodPressure
     [ServiceContract]
     public interface ILogin
     {
-        [OperationContract]
+        [OperationContract(IsOneWay =false)]
         int Login(string Email,string Password);
     }
 }

@@ -39,6 +39,7 @@
             this.button3 = new System.Windows.Forms.Button();
             this.Wasfety = new System.Windows.Forms.Button();
             this.BloodPressure_Panel = new System.Windows.Forms.Panel();
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
@@ -48,15 +49,17 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.BloodPressure_Panel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             this.SuspendLayout();
             // 
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(130, 12);
+            this.pictureBox1.Location = new System.Drawing.Point(50, 9);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(228, 88);
+            this.pictureBox1.Size = new System.Drawing.Size(304, 108);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
@@ -66,18 +69,20 @@
             this.UserName_Label.AutoSize = true;
             this.UserName_Label.Font = new System.Drawing.Font("Century Gothic", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.UserName_Label.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.UserName_Label.Location = new System.Drawing.Point(359, 37);
+            this.UserName_Label.Location = new System.Drawing.Point(384, 40);
+            this.UserName_Label.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.UserName_Label.Name = "UserName_Label";
-            this.UserName_Label.Size = new System.Drawing.Size(113, 38);
+            this.UserName_Label.Size = new System.Drawing.Size(140, 47);
             this.UserName_Label.TabIndex = 1;
             this.UserName_Label.Text = "label1";
             // 
             // pictureBox2
             // 
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(576, 7);
+            this.pictureBox2.Location = new System.Drawing.Point(768, 9);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(100, 72);
+            this.pictureBox2.Size = new System.Drawing.Size(133, 89);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox2.TabIndex = 41;
             this.pictureBox2.TabStop = false;
@@ -86,9 +91,10 @@
             // pictureBox3
             // 
             this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(12, 332);
+            this.pictureBox3.Location = new System.Drawing.Point(16, 409);
+            this.pictureBox3.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(70, 39);
+            this.pictureBox3.Size = new System.Drawing.Size(93, 48);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox3.TabIndex = 45;
             this.pictureBox3.TabStop = false;
@@ -102,10 +108,10 @@
             this.button5.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(50)))), ((int)(((byte)(55)))));
             this.button5.Image = ((System.Drawing.Image)(resources.GetObject("button5.Image")));
-            this.button5.Location = new System.Drawing.Point(173, 141);
-            this.button5.Margin = new System.Windows.Forms.Padding(2);
+            this.button5.Location = new System.Drawing.Point(231, 174);
+            this.button5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(139, 59);
+            this.button5.Size = new System.Drawing.Size(185, 73);
             this.button5.TabIndex = 48;
             this.button5.Text = "Edit Profile";
             this.button5.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -120,10 +126,10 @@
             this.button2.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(50)))), ((int)(((byte)(55)))));
             this.button2.Image = ((System.Drawing.Image)(resources.GetObject("button2.Image")));
-            this.button2.Location = new System.Drawing.Point(410, 141);
-            this.button2.Margin = new System.Windows.Forms.Padding(2);
+            this.button2.Location = new System.Drawing.Point(547, 174);
+            this.button2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(170, 59);
+            this.button2.Size = new System.Drawing.Size(227, 73);
             this.button2.TabIndex = 51;
             this.button2.Text = "View Blood  Pressure History";
             this.button2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -138,10 +144,10 @@
             this.button1.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(50)))), ((int)(((byte)(55)))));
             this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
-            this.button1.Location = new System.Drawing.Point(173, 224);
-            this.button1.Margin = new System.Windows.Forms.Padding(2);
+            this.button1.Location = new System.Drawing.Point(231, 276);
+            this.button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(157, 59);
+            this.button1.Size = new System.Drawing.Size(209, 73);
             this.button1.TabIndex = 53;
             this.button1.Text = "Update Blood Pressure";
             this.button1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -155,10 +161,10 @@
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button3.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(50)))), ((int)(((byte)(55)))));
-            this.button3.Location = new System.Drawing.Point(410, 224);
-            this.button3.Margin = new System.Windows.Forms.Padding(2);
+            this.button3.Location = new System.Drawing.Point(547, 276);
+            this.button3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(139, 59);
+            this.button3.Size = new System.Drawing.Size(185, 73);
             this.button3.TabIndex = 54;
             this.button3.Text = "View Diet Meals";
             this.button3.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -172,50 +178,69 @@
             this.Wasfety.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Wasfety.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Wasfety.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(50)))), ((int)(((byte)(55)))));
-            this.Wasfety.Location = new System.Drawing.Point(294, 298);
-            this.Wasfety.Margin = new System.Windows.Forms.Padding(2);
+            this.Wasfety.Location = new System.Drawing.Point(392, 367);
+            this.Wasfety.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Wasfety.Name = "Wasfety";
-            this.Wasfety.Size = new System.Drawing.Size(139, 59);
+            this.Wasfety.Size = new System.Drawing.Size(185, 73);
             this.Wasfety.TabIndex = 55;
             this.Wasfety.Text = "Check Meal";
             this.Wasfety.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.Wasfety.UseVisualStyleBackColor = false;
+            this.Wasfety.Click += new System.EventHandler(this.Wasfety_Click);
             // 
             // BloodPressure_Panel
             // 
+            this.BloodPressure_Panel.Controls.Add(this.pictureBox5);
             this.BloodPressure_Panel.Controls.Add(this.pictureBox4);
             this.BloodPressure_Panel.Controls.Add(this.textBox2);
             this.BloodPressure_Panel.Controls.Add(this.textBox1);
             this.BloodPressure_Panel.Controls.Add(this.label2);
             this.BloodPressure_Panel.Controls.Add(this.label1);
-            this.BloodPressure_Panel.Location = new System.Drawing.Point(109, 131);
+            this.BloodPressure_Panel.Location = new System.Drawing.Point(1, 228);
+            this.BloodPressure_Panel.Margin = new System.Windows.Forms.Padding(4);
             this.BloodPressure_Panel.Name = "BloodPressure_Panel";
-            this.BloodPressure_Panel.Size = new System.Drawing.Size(500, 226);
+            this.BloodPressure_Panel.Size = new System.Drawing.Size(835, 243);
             this.BloodPressure_Panel.TabIndex = 56;
             this.BloodPressure_Panel.Visible = false;
+            // 
+            // pictureBox5
+            // 
+            this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
+            this.pictureBox5.Location = new System.Drawing.Point(15, 261);
+            this.pictureBox5.Margin = new System.Windows.Forms.Padding(4);
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.Size = new System.Drawing.Size(93, 48);
+            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox5.TabIndex = 63;
+            this.pictureBox5.TabStop = false;
+            this.pictureBox5.Click += new System.EventHandler(this.pictureBox5_Click);
             // 
             // pictureBox4
             // 
             this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
-            this.pictureBox4.Location = new System.Drawing.Point(145, 157);
+            this.pictureBox4.Location = new System.Drawing.Point(283, 224);
+            this.pictureBox4.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(192, 69);
+            this.pictureBox4.Size = new System.Drawing.Size(256, 85);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox4.TabIndex = 62;
             this.pictureBox4.TabStop = false;
+            this.pictureBox4.Click += new System.EventHandler(this.pictureBox4_Click);
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(260, 113);
+            this.textBox2.Location = new System.Drawing.Point(467, 145);
+            this.textBox2.Margin = new System.Windows.Forms.Padding(4);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(120, 20);
+            this.textBox2.Size = new System.Drawing.Size(159, 22);
             this.textBox2.TabIndex = 5;
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(260, 55);
+            this.textBox1.Location = new System.Drawing.Point(467, 70);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(4);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(120, 20);
+            this.textBox1.Size = new System.Drawing.Size(159, 22);
             this.textBox1.TabIndex = 4;
             // 
             // label2
@@ -223,9 +248,10 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label2.Location = new System.Drawing.Point(11, 113);
+            this.label2.Location = new System.Drawing.Point(139, 142);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(217, 21);
+            this.label2.Size = new System.Drawing.Size(274, 23);
             this.label2.TabIndex = 3;
             this.label2.Text = "Current Low Blood Pressure";
             // 
@@ -234,18 +260,19 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label1.Location = new System.Drawing.Point(11, 52);
+            this.label1.Location = new System.Drawing.Point(139, 70);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(221, 21);
+            this.label1.Size = new System.Drawing.Size(276, 23);
             this.label1.TabIndex = 2;
             this.label1.Text = "Current High Blood Pressure";
             // 
             // UserDetails
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Navy;
-            this.ClientSize = new System.Drawing.Size(692, 383);
+            this.ClientSize = new System.Drawing.Size(923, 471);
             this.Controls.Add(this.BloodPressure_Panel);
             this.Controls.Add(this.Wasfety);
             this.Controls.Add(this.button3);
@@ -257,6 +284,7 @@
             this.Controls.Add(this.UserName_Label);
             this.Controls.Add(this.pictureBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "UserDetails";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "UserDetails";
@@ -266,6 +294,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.BloodPressure_Panel.ResumeLayout(false);
             this.BloodPressure_Panel.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -289,5 +318,6 @@
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.PictureBox pictureBox4;
+        private System.Windows.Forms.PictureBox pictureBox5;
     }
 }

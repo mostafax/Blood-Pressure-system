@@ -1,1 +1,1 @@
-﻿insert into Person (Name,Age,Gender,Email,Password,DietID,Weight) values ('z',12,'z','z','z',9,12) SELECT scope_identity(); 
+﻿SELECT PersonID,Name,password FROM Person  WHERE Person.Name = 'lamis hassan' AND (Person.Password = '123456' or Person.Password = 'none')

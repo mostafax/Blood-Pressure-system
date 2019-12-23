@@ -17,26 +17,14 @@
   <wsdl:message name="ICRUD_insertDiet_InputMessage">
     <wsdl:part name="parameters" element="tns:insertDiet" />
   </wsdl:message>
-  <wsdl:message name="ICRUD_insertDiet_OutputMessage">
-    <wsdl:part name="parameters" element="tns:insertDietResponse" />
-  </wsdl:message>
   <wsdl:message name="ICRUD_insertMeal_InputMessage">
     <wsdl:part name="parameters" element="tns:insertMeal" />
-  </wsdl:message>
-  <wsdl:message name="ICRUD_insertMeal_OutputMessage">
-    <wsdl:part name="parameters" element="tns:insertMealResponse" />
   </wsdl:message>
   <wsdl:message name="ICRUD_insertDietMeal_InputMessage">
     <wsdl:part name="parameters" element="tns:insertDietMeal" />
   </wsdl:message>
-  <wsdl:message name="ICRUD_insertDietMeal_OutputMessage">
-    <wsdl:part name="parameters" element="tns:insertDietMealResponse" />
-  </wsdl:message>
   <wsdl:message name="ICRUD_insertBloodTrack_InputMessage">
     <wsdl:part name="parameters" element="tns:insertBloodTrack" />
-  </wsdl:message>
-  <wsdl:message name="ICRUD_insertBloodTrack_OutputMessage">
-    <wsdl:part name="parameters" element="tns:insertBloodTrackResponse" />
   </wsdl:message>
   <wsdl:message name="ICRUD_viewPersonInfo_InputMessage">
     <wsdl:part name="parameters" element="tns:viewPersonInfo" />
@@ -65,9 +53,6 @@
   <wsdl:message name="ICRUD_updatePerson_InputMessage">
     <wsdl:part name="parameters" element="tns:updatePerson" />
   </wsdl:message>
-  <wsdl:message name="ICRUD_updatePerson_OutputMessage">
-    <wsdl:part name="parameters" element="tns:updatePersonResponse" />
-  </wsdl:message>
   <wsdl:message name="ICRUD_getSuitableDiet_InputMessage">
     <wsdl:part name="parameters" element="tns:getSuitableDiet" />
   </wsdl:message>
@@ -77,8 +62,11 @@
   <wsdl:message name="ICRUD_setPersonDiet_InputMessage">
     <wsdl:part name="parameters" element="tns:setPersonDiet" />
   </wsdl:message>
-  <wsdl:message name="ICRUD_setPersonDiet_OutputMessage">
-    <wsdl:part name="parameters" element="tns:setPersonDietResponse" />
+  <wsdl:message name="ICRUD_validName_InputMessage">
+    <wsdl:part name="parameters" element="tns:validName" />
+  </wsdl:message>
+  <wsdl:message name="ICRUD_validName_OutputMessage">
+    <wsdl:part name="parameters" element="tns:validNameResponse" />
   </wsdl:message>
   <wsdl:portType name="ICRUD">
     <wsdl:operation name="insertPerson">
@@ -87,19 +75,15 @@
     </wsdl:operation>
     <wsdl:operation name="insertDiet">
       <wsdl:input wsaw:Action="http://tempuri.org/ICRUD/insertDiet" message="tns:ICRUD_insertDiet_InputMessage" />
-      <wsdl:output wsaw:Action="http://tempuri.org/ICRUD/insertDietResponse" message="tns:ICRUD_insertDiet_OutputMessage" />
     </wsdl:operation>
     <wsdl:operation name="insertMeal">
       <wsdl:input wsaw:Action="http://tempuri.org/ICRUD/insertMeal" message="tns:ICRUD_insertMeal_InputMessage" />
-      <wsdl:output wsaw:Action="http://tempuri.org/ICRUD/insertMealResponse" message="tns:ICRUD_insertMeal_OutputMessage" />
     </wsdl:operation>
     <wsdl:operation name="insertDietMeal">
       <wsdl:input wsaw:Action="http://tempuri.org/ICRUD/insertDietMeal" message="tns:ICRUD_insertDietMeal_InputMessage" />
-      <wsdl:output wsaw:Action="http://tempuri.org/ICRUD/insertDietMealResponse" message="tns:ICRUD_insertDietMeal_OutputMessage" />
     </wsdl:operation>
     <wsdl:operation name="insertBloodTrack">
       <wsdl:input wsaw:Action="http://tempuri.org/ICRUD/insertBloodTrack" message="tns:ICRUD_insertBloodTrack_InputMessage" />
-      <wsdl:output wsaw:Action="http://tempuri.org/ICRUD/insertBloodTrackResponse" message="tns:ICRUD_insertBloodTrack_OutputMessage" />
     </wsdl:operation>
     <wsdl:operation name="viewPersonInfo">
       <wsdl:input wsaw:Action="http://tempuri.org/ICRUD/viewPersonInfo" message="tns:ICRUD_viewPersonInfo_InputMessage" />
@@ -119,7 +103,6 @@
     </wsdl:operation>
     <wsdl:operation name="updatePerson">
       <wsdl:input wsaw:Action="http://tempuri.org/ICRUD/updatePerson" message="tns:ICRUD_updatePerson_InputMessage" />
-      <wsdl:output wsaw:Action="http://tempuri.org/ICRUD/updatePersonResponse" message="tns:ICRUD_updatePerson_OutputMessage" />
     </wsdl:operation>
     <wsdl:operation name="getSuitableDiet">
       <wsdl:input wsaw:Action="http://tempuri.org/ICRUD/getSuitableDiet" message="tns:ICRUD_getSuitableDiet_InputMessage" />
@@ -127,7 +110,10 @@
     </wsdl:operation>
     <wsdl:operation name="setPersonDiet">
       <wsdl:input wsaw:Action="http://tempuri.org/ICRUD/setPersonDiet" message="tns:ICRUD_setPersonDiet_InputMessage" />
-      <wsdl:output wsaw:Action="http://tempuri.org/ICRUD/setPersonDietResponse" message="tns:ICRUD_setPersonDiet_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="validName">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICRUD/validName" message="tns:ICRUD_validName_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICRUD/validNameResponse" message="tns:ICRUD_validName_OutputMessage" />
     </wsdl:operation>
   </wsdl:portType>
   <wsdl:binding name="BasicHttpBinding_ICRUD" type="tns:ICRUD">
@@ -146,36 +132,24 @@
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>
-      <wsdl:output>
-        <soap:body use="literal" />
-      </wsdl:output>
     </wsdl:operation>
     <wsdl:operation name="insertMeal">
       <soap:operation soapAction="http://tempuri.org/ICRUD/insertMeal" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>
-      <wsdl:output>
-        <soap:body use="literal" />
-      </wsdl:output>
     </wsdl:operation>
     <wsdl:operation name="insertDietMeal">
       <soap:operation soapAction="http://tempuri.org/ICRUD/insertDietMeal" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>
-      <wsdl:output>
-        <soap:body use="literal" />
-      </wsdl:output>
     </wsdl:operation>
     <wsdl:operation name="insertBloodTrack">
       <soap:operation soapAction="http://tempuri.org/ICRUD/insertBloodTrack" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>
-      <wsdl:output>
-        <soap:body use="literal" />
-      </wsdl:output>
     </wsdl:operation>
     <wsdl:operation name="viewPersonInfo">
       <soap:operation soapAction="http://tempuri.org/ICRUD/viewPersonInfo" style="document" />
@@ -218,9 +192,6 @@
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>
-      <wsdl:output>
-        <soap:body use="literal" />
-      </wsdl:output>
     </wsdl:operation>
     <wsdl:operation name="getSuitableDiet">
       <soap:operation soapAction="http://tempuri.org/ICRUD/getSuitableDiet" style="document" />
@@ -233,6 +204,12 @@
     </wsdl:operation>
     <wsdl:operation name="setPersonDiet">
       <soap:operation soapAction="http://tempuri.org/ICRUD/setPersonDiet" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+    </wsdl:operation>
+    <wsdl:operation name="validName">
+      <soap:operation soapAction="http://tempuri.org/ICRUD/validName" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>

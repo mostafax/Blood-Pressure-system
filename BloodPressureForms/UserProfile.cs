@@ -37,7 +37,13 @@ namespace BloodPressureForms
             Person p = new Person();
             CRUDService.CRUDClient crud = new CRUDService.CRUDClient();
             p = crud.viewPersonInfo(Login.Person_ID);
-
+            if(p.Email =="none" || p.Password == "none" )
+            {
+                EmailBox.Visible = false;
+                PasswordBox.Visible = false;
+                label6.Visible = false;
+                label7.Visible = false;
+            }
             NameBox.Text = p.Name;
             AgeBox.Text = (p.Age).ToString();
             WeightBox.Text = (p.Weight).ToString();
@@ -67,15 +73,17 @@ namespace BloodPressureForms
             p.Email = EmailBox.Text;
             p.Password = PasswordBox.Text;
             p.PersonID = Login.Person_ID;
-            int done = crud.updatePerson(p);
-            if (done == 1 )
+            try
             {
-              MessageBox.Show("Updated Sucessfully");
+                crud.updatePerson(p);
+                MessageBox.Show("Updated Sucessfully");
             }
-            else
+            catch
             {
                 MessageBox.Show("No Modifications Found");
             }
+                
+            
 
 
         }

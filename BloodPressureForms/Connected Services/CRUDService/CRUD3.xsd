@@ -23,21 +23,11 @@
       </xs:sequence>
     </xs:complexType>
   </xs:element>
-  <xs:element name="insertDietResponse">
-    <xs:complexType>
-      <xs:sequence />
-    </xs:complexType>
-  </xs:element>
   <xs:element name="insertMeal">
     <xs:complexType>
       <xs:sequence>
         <xs:element xmlns:q3="http://schemas.datacontract.org/2004/07/BloodPressure" minOccurs="0" name="m" nillable="true" type="q3:Meal" />
       </xs:sequence>
-    </xs:complexType>
-  </xs:element>
-  <xs:element name="insertMealResponse">
-    <xs:complexType>
-      <xs:sequence />
     </xs:complexType>
   </xs:element>
   <xs:element name="insertDietMeal">
@@ -47,22 +37,12 @@
       </xs:sequence>
     </xs:complexType>
   </xs:element>
-  <xs:element name="insertDietMealResponse">
-    <xs:complexType>
-      <xs:sequence />
-    </xs:complexType>
-  </xs:element>
   <xs:element name="insertBloodTrack">
     <xs:complexType>
       <xs:sequence>
         <xs:element xmlns:q5="http://schemas.datacontract.org/2004/07/BloodPressure" minOccurs="0" name="bt" nillable="true" type="q5:BloodTrack" />
         <xs:element minOccurs="0" name="PersonID" type="xs:int" />
       </xs:sequence>
-    </xs:complexType>
-  </xs:element>
-  <xs:element name="insertBloodTrackResponse">
-    <xs:complexType>
-      <xs:sequence />
     </xs:complexType>
   </xs:element>
   <xs:element name="viewPersonInfo">
@@ -126,13 +106,6 @@
       </xs:sequence>
     </xs:complexType>
   </xs:element>
-  <xs:element name="updatePersonResponse">
-    <xs:complexType>
-      <xs:sequence>
-        <xs:element minOccurs="0" name="updatePersonResult" type="xs:int" />
-      </xs:sequence>
-    </xs:complexType>
-  </xs:element>
   <xs:element name="getSuitableDiet">
     <xs:complexType>
       <xs:sequence>
@@ -155,9 +128,18 @@
       </xs:sequence>
     </xs:complexType>
   </xs:element>
-  <xs:element name="setPersonDietResponse">
+  <xs:element name="validName">
     <xs:complexType>
-      <xs:sequence />
+      <xs:sequence>
+        <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="validNameResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="validNameResult" type="xs:boolean" />
+      </xs:sequence>
     </xs:complexType>
   </xs:element>
 </xs:schema>

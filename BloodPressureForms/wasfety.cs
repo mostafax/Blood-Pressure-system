@@ -71,7 +71,7 @@ namespace BloodPressureForms
                 });
                 // Sending the Request To Wasfety APi
                 //textBox1.Text = json;
-                string url = "http://127.0.0.1:50880/test/";
+                string url = "http://127.0.0.1:55417/test/";
                 HttpWebRequest request = (HttpWebRequest)WebRequest.Create(url);
                 request.Method = "POST";
                 request.ContentType = "application/json";
@@ -120,6 +120,23 @@ namespace BloodPressureForms
 
                 }
             }
+        }
+
+        private void wasfety_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+            UserDetails userDetails = new UserDetails();
+            userDetails.Show();
+            this.Hide();
         }
     }
 }

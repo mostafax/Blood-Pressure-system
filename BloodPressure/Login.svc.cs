@@ -15,19 +15,19 @@ namespace BloodPressure
         //TODO .. impelemt Login Function -> return -1 if not valid else return PersonID. 
         // Note -> For using Any of CRUD methods You Can Do As Follwing :
         //  CRUD crudMethods = new CRUD();
-        static string connString = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=D:\\First Term - 4th Year\\SW Architecture\\Project\\Blood-Pressure-system\\BloodPressure\\App_Data\\BloodPressure.mdf;Integrated Security=True";
+        static string connString = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=C:\\Users\\mostafax\\Desktop\\Blood-Pressure-system\\BloodPressure\\App_Data\\BloodPressure.mdf;Integrated Security=True";
         SqlConnection sqlConn = new SqlConnection(connString);
         int ILogin.Login(string Name, string Password)
         {
             sqlConn.Open();
-            SqlCommand cmd = new SqlCommand("SELECT PersonID,Name,password FROM Person  WHERE Person.Name = @Name AND Person.Password = @Password  ", sqlConn);
+            SqlCommand cmd = new SqlCommand("SELECT PersonID,Name,password FROM Person  WHERE Person.Name = @Name AND (Person.Password = @Password or Person.Password = 'none') ", sqlConn);
             cmd.Parameters.AddWithValue("@Name", Name);
             cmd.Parameters.AddWithValue("@Password", Password);
 
             SqlDataReader reader;
             reader = cmd.ExecuteReader();
             int r = 0;
-            while (reader.Read())
+            if (reader.Read())
             {
                 r = reader.GetInt32(0);
                 sqlConn.Close();

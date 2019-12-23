@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+using BloodPressure;
 namespace BloodPressureForms
 {
     public partial class DietMeals : Form
@@ -21,6 +21,9 @@ namespace BloodPressureForms
         {
             CRUDService.CRUDClient crud = new CRUDService.CRUDClient();
             List<string> Meals = new List<string>();
+            
+            
+            
             Meals = crud.viewPersonDiet(Login.Person_ID).ToList();
             DietName_value.Text = Meals[0];
             DietType_value.Text = Meals[1];
@@ -30,7 +33,7 @@ namespace BloodPressureForms
             MealLuch.Text = Meals[5];
             MealDinner_value.Text = Meals[6];
             MealDinner.Text = Meals[7];
-
+            
             
         }
 

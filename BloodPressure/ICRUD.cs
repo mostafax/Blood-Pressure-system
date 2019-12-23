@@ -10,41 +10,43 @@ namespace BloodPressure
     [ServiceContract]
     public interface ICRUD
     {
-        [OperationContract]
+        [OperationContract (IsOneWay =false)]
         int insertPerson(Person p);
 
-        [OperationContract]
+        [OperationContract(IsOneWay =true)]
         void insertDiet(Diet d);
 
-        [OperationContract]
+        [OperationContract(IsOneWay =true)]
         void insertMeal(Meal m);
 
-        [OperationContract]
+        [OperationContract(IsOneWay =true)]
         void insertDietMeal(DietMeal dm);
 
-        [OperationContract]
+        [OperationContract(IsOneWay =true)]
         void insertBloodTrack(BloodTrack bt, int PersonID);
 
-        [OperationContract]
+        [OperationContract(IsOneWay =false)]
         Person viewPersonInfo(int PersonID);
 
-        [OperationContract]
+        [OperationContract(IsOneWay =false)]
         List<string> viewPersonDiet(int PersonID);
 
-        [OperationContract]
+        [OperationContract(IsOneWay =false)]
         List<BloodTrack> viewPersonBloodPressure(int PersonID);
 
-        [OperationContract]
+        [OperationContract(IsOneWay =false)]
         List<string> getObservers();
 
-        [OperationContract]
-        int updatePerson(Person p);
+        [OperationContract(IsOneWay =true)]
+        void updatePerson(Person p);
 
-        [OperationContract]
+        [OperationContract(IsOneWay =false)]
         int getSuitableDiet(float Pressure);
 
-        [OperationContract]
+        [OperationContract(IsOneWay =true)]
         void setPersonDiet(int DietID, int PersonID);
 
+        [OperationContract(IsOneWay =false)]
+        bool validName(string Name);
     }
 }

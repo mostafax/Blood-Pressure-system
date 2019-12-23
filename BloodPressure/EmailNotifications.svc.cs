@@ -17,7 +17,7 @@ namespace BloodPressure
         {
             List<string> Emails = new List<string>();
             Emails = crudMethods.getObservers();
-            string messageBody = "messa messa yasa7byy .. ";
+            string messageBody = "Reminder Remember to measure your blood pressure ";
             string email = "mostafamousa1080p@gmail.com";
             for (int i=0;i<Emails.Count;i++)
             {

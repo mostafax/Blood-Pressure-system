@@ -52,18 +52,20 @@
             // 
             this.label1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.label1.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.label1.Location = new System.Drawing.Point(215, 188);
+            this.label1.Location = new System.Drawing.Point(217, 223);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(447, 2);
+            this.label1.Size = new System.Drawing.Size(734, 2);
             this.label1.TabIndex = 0;
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // pictureBox3
             // 
             this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(21, 329);
+            this.pictureBox3.Location = new System.Drawing.Point(28, 405);
+            this.pictureBox3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(70, 39);
+            this.pictureBox3.Size = new System.Drawing.Size(93, 48);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox3.TabIndex = 47;
             this.pictureBox3.TabStop = false;
@@ -72,9 +74,10 @@
             // pictureBox2
             // 
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(679, 10);
+            this.pictureBox2.Location = new System.Drawing.Point(905, 12);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(100, 72);
+            this.pictureBox2.Size = new System.Drawing.Size(133, 89);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox2.TabIndex = 46;
             this.pictureBox2.TabStop = false;
@@ -83,9 +86,10 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(35, 12);
+            this.pictureBox1.Location = new System.Drawing.Point(47, 15);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(100, 127);
+            this.pictureBox1.Size = new System.Drawing.Size(133, 156);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 48;
             this.pictureBox1.TabStop = false;
@@ -95,9 +99,10 @@
             this.MealBreakfast.AutoSize = true;
             this.MealBreakfast.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.MealBreakfast.ForeColor = System.Drawing.SystemColors.Window;
-            this.MealBreakfast.Location = new System.Drawing.Point(239, 166);
+            this.MealBreakfast.Location = new System.Drawing.Point(269, 204);
+            this.MealBreakfast.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.MealBreakfast.Name = "MealBreakfast";
-            this.MealBreakfast.Size = new System.Drawing.Size(66, 24);
+            this.MealBreakfast.Size = new System.Drawing.Size(85, 29);
             this.MealBreakfast.TabIndex = 49;
             this.MealBreakfast.Text = "label2";
             // 
@@ -106,9 +111,10 @@
             this.MealLuch.AutoSize = true;
             this.MealLuch.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.MealLuch.ForeColor = System.Drawing.SystemColors.Window;
-            this.MealLuch.Location = new System.Drawing.Point(392, 166);
+            this.MealLuch.Location = new System.Drawing.Point(529, 204);
+            this.MealLuch.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.MealLuch.Name = "MealLuch";
-            this.MealLuch.Size = new System.Drawing.Size(66, 24);
+            this.MealLuch.Size = new System.Drawing.Size(85, 29);
             this.MealLuch.TabIndex = 50;
             this.MealLuch.Text = "label3";
             // 
@@ -117,9 +123,10 @@
             this.MealDinner.AutoSize = true;
             this.MealDinner.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.MealDinner.ForeColor = System.Drawing.SystemColors.Window;
-            this.MealDinner.Location = new System.Drawing.Point(548, 166);
+            this.MealDinner.Location = new System.Drawing.Point(791, 204);
+            this.MealDinner.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.MealDinner.Name = "MealDinner";
-            this.MealDinner.Size = new System.Drawing.Size(66, 24);
+            this.MealDinner.Size = new System.Drawing.Size(85, 29);
             this.MealDinner.TabIndex = 51;
             this.MealDinner.Text = "label4";
             // 
@@ -128,9 +135,10 @@
             this.DietName.AutoSize = true;
             this.DietName.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.DietName.ForeColor = System.Drawing.Color.White;
-            this.DietName.Location = new System.Drawing.Point(229, 69);
+            this.DietName.Location = new System.Drawing.Point(305, 85);
+            this.DietName.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.DietName.Name = "DietName";
-            this.DietName.Size = new System.Drawing.Size(121, 25);
+            this.DietName.Size = new System.Drawing.Size(151, 31);
             this.DietName.TabIndex = 52;
             this.DietName.Text = "Diet Name";
             this.DietName.Click += new System.EventHandler(this.label5_Click);
@@ -140,9 +148,10 @@
             this.DietName_value.AutoSize = true;
             this.DietName_value.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.DietName_value.ForeColor = System.Drawing.Color.White;
-            this.DietName_value.Location = new System.Drawing.Point(372, 76);
+            this.DietName_value.Location = new System.Drawing.Point(496, 94);
+            this.DietName_value.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.DietName_value.Name = "DietName_value";
-            this.DietName_value.Size = new System.Drawing.Size(51, 20);
+            this.DietName_value.Size = new System.Drawing.Size(64, 25);
             this.DietName_value.TabIndex = 53;
             this.DietName_value.Text = "label6";
             this.DietName_value.Click += new System.EventHandler(this.label6_Click);
@@ -152,9 +161,10 @@
             this.DietType.AutoSize = true;
             this.DietType.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.DietType.ForeColor = System.Drawing.Color.White;
-            this.DietType.Location = new System.Drawing.Point(229, 114);
+            this.DietType.Location = new System.Drawing.Point(305, 140);
+            this.DietType.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.DietType.Name = "DietType";
-            this.DietType.Size = new System.Drawing.Size(113, 25);
+            this.DietType.Size = new System.Drawing.Size(140, 31);
             this.DietType.TabIndex = 54;
             this.DietType.Text = "Diet Type";
             // 
@@ -163,9 +173,10 @@
             this.DietType_value.AutoSize = true;
             this.DietType_value.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.DietType_value.ForeColor = System.Drawing.Color.White;
-            this.DietType_value.Location = new System.Drawing.Point(372, 121);
+            this.DietType_value.Location = new System.Drawing.Point(496, 149);
+            this.DietType_value.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.DietType_value.Name = "DietType_value";
-            this.DietType_value.Size = new System.Drawing.Size(51, 20);
+            this.DietType_value.Size = new System.Drawing.Size(64, 25);
             this.DietType_value.TabIndex = 55;
             this.DietType_value.Text = "label8";
             // 
@@ -174,9 +185,10 @@
             this.MealBreakfast_value.AutoSize = true;
             this.MealBreakfast_value.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.MealBreakfast_value.ForeColor = System.Drawing.Color.White;
-            this.MealBreakfast_value.Location = new System.Drawing.Point(249, 217);
+            this.MealBreakfast_value.Location = new System.Drawing.Point(271, 267);
+            this.MealBreakfast_value.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.MealBreakfast_value.Name = "MealBreakfast_value";
-            this.MealBreakfast_value.Size = new System.Drawing.Size(51, 20);
+            this.MealBreakfast_value.Size = new System.Drawing.Size(64, 25);
             this.MealBreakfast_value.TabIndex = 56;
             this.MealBreakfast_value.Text = "label9";
             // 
@@ -185,9 +197,10 @@
             this.MealLunch_value.AutoSize = true;
             this.MealLunch_value.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.MealLunch_value.ForeColor = System.Drawing.Color.White;
-            this.MealLunch_value.Location = new System.Drawing.Point(395, 217);
+            this.MealLunch_value.Location = new System.Drawing.Point(534, 267);
+            this.MealLunch_value.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.MealLunch_value.Name = "MealLunch_value";
-            this.MealLunch_value.Size = new System.Drawing.Size(60, 20);
+            this.MealLunch_value.Size = new System.Drawing.Size(75, 25);
             this.MealLunch_value.TabIndex = 57;
             this.MealLunch_value.Text = "label10";
             // 
@@ -196,18 +209,19 @@
             this.MealDinner_value.AutoSize = true;
             this.MealDinner_value.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.MealDinner_value.ForeColor = System.Drawing.Color.White;
-            this.MealDinner_value.Location = new System.Drawing.Point(551, 217);
+            this.MealDinner_value.Location = new System.Drawing.Point(795, 267);
+            this.MealDinner_value.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.MealDinner_value.Name = "MealDinner_value";
-            this.MealDinner_value.Size = new System.Drawing.Size(60, 20);
+            this.MealDinner_value.Size = new System.Drawing.Size(75, 25);
             this.MealDinner_value.TabIndex = 58;
             this.MealDinner_value.Text = "label11";
             // 
             // DietMeals
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Navy;
-            this.ClientSize = new System.Drawing.Size(800, 380);
+            this.ClientSize = new System.Drawing.Size(1067, 468);
             this.Controls.Add(this.MealDinner_value);
             this.Controls.Add(this.MealLunch_value);
             this.Controls.Add(this.MealBreakfast_value);
@@ -223,6 +237,7 @@
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "DietMeals";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "DietMeals";

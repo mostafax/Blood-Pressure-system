@@ -36,10 +36,18 @@ namespace BloodPressureForms
             this.Hide();
         }
 
-        async
-        private void pictureBox5_Click(object sender, EventArgs e)
+        
+        private async void pictureBox5_Click(object sender, EventArgs e)
         {
-            
+            Utility utility = new Utility();
+            var Response = await utility.LogUserWithGoogle();
+            this.Activate();
+            Program.PersonName = Response["name"].ToString();
+            Program.MakeHiden = true;
+            Register register = new Register();
+            register.Show();
+            this.Hide();
+
         }
 
        

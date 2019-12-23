@@ -21,28 +21,28 @@ namespace BloodPressureForms.CRUDService {
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/ICRUD/insertPerson", ReplyAction="http://tempuri.org/ICRUD/insertPersonResponse")]
         System.Threading.Tasks.Task<int> insertPersonAsync(BloodPressure.Person p);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/ICRUD/insertDiet", ReplyAction="http://tempuri.org/ICRUD/insertDietResponse")]
+        [System.ServiceModel.OperationContractAttribute(IsOneWay=true, Action="http://tempuri.org/ICRUD/insertDiet")]
         void insertDiet(BloodPressure.Diet d);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/ICRUD/insertDiet", ReplyAction="http://tempuri.org/ICRUD/insertDietResponse")]
+        [System.ServiceModel.OperationContractAttribute(IsOneWay=true, Action="http://tempuri.org/ICRUD/insertDiet")]
         System.Threading.Tasks.Task insertDietAsync(BloodPressure.Diet d);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/ICRUD/insertMeal", ReplyAction="http://tempuri.org/ICRUD/insertMealResponse")]
+        [System.ServiceModel.OperationContractAttribute(IsOneWay=true, Action="http://tempuri.org/ICRUD/insertMeal")]
         void insertMeal(BloodPressure.Meal m);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/ICRUD/insertMeal", ReplyAction="http://tempuri.org/ICRUD/insertMealResponse")]
+        [System.ServiceModel.OperationContractAttribute(IsOneWay=true, Action="http://tempuri.org/ICRUD/insertMeal")]
         System.Threading.Tasks.Task insertMealAsync(BloodPressure.Meal m);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/ICRUD/insertDietMeal", ReplyAction="http://tempuri.org/ICRUD/insertDietMealResponse")]
+        [System.ServiceModel.OperationContractAttribute(IsOneWay=true, Action="http://tempuri.org/ICRUD/insertDietMeal")]
         void insertDietMeal(BloodPressure.DietMeal dm);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/ICRUD/insertDietMeal", ReplyAction="http://tempuri.org/ICRUD/insertDietMealResponse")]
+        [System.ServiceModel.OperationContractAttribute(IsOneWay=true, Action="http://tempuri.org/ICRUD/insertDietMeal")]
         System.Threading.Tasks.Task insertDietMealAsync(BloodPressure.DietMeal dm);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/ICRUD/insertBloodTrack", ReplyAction="http://tempuri.org/ICRUD/insertBloodTrackResponse")]
+        [System.ServiceModel.OperationContractAttribute(IsOneWay=true, Action="http://tempuri.org/ICRUD/insertBloodTrack")]
         void insertBloodTrack(BloodPressure.BloodTrack bt, int PersonID);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/ICRUD/insertBloodTrack", ReplyAction="http://tempuri.org/ICRUD/insertBloodTrackResponse")]
+        [System.ServiceModel.OperationContractAttribute(IsOneWay=true, Action="http://tempuri.org/ICRUD/insertBloodTrack")]
         System.Threading.Tasks.Task insertBloodTrackAsync(BloodPressure.BloodTrack bt, int PersonID);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/ICRUD/viewPersonInfo", ReplyAction="http://tempuri.org/ICRUD/viewPersonInfoResponse")]
@@ -69,11 +69,11 @@ namespace BloodPressureForms.CRUDService {
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/ICRUD/getObservers", ReplyAction="http://tempuri.org/ICRUD/getObserversResponse")]
         System.Threading.Tasks.Task<string[]> getObserversAsync();
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/ICRUD/updatePerson", ReplyAction="http://tempuri.org/ICRUD/updatePersonResponse")]
-        int updatePerson(BloodPressure.Person p);
+        [System.ServiceModel.OperationContractAttribute(IsOneWay=true, Action="http://tempuri.org/ICRUD/updatePerson")]
+        void updatePerson(BloodPressure.Person p);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/ICRUD/updatePerson", ReplyAction="http://tempuri.org/ICRUD/updatePersonResponse")]
-        System.Threading.Tasks.Task<int> updatePersonAsync(BloodPressure.Person p);
+        [System.ServiceModel.OperationContractAttribute(IsOneWay=true, Action="http://tempuri.org/ICRUD/updatePerson")]
+        System.Threading.Tasks.Task updatePersonAsync(BloodPressure.Person p);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/ICRUD/getSuitableDiet", ReplyAction="http://tempuri.org/ICRUD/getSuitableDietResponse")]
         int getSuitableDiet(float Pressure);
@@ -81,11 +81,17 @@ namespace BloodPressureForms.CRUDService {
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/ICRUD/getSuitableDiet", ReplyAction="http://tempuri.org/ICRUD/getSuitableDietResponse")]
         System.Threading.Tasks.Task<int> getSuitableDietAsync(float Pressure);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/ICRUD/setPersonDiet", ReplyAction="http://tempuri.org/ICRUD/setPersonDietResponse")]
+        [System.ServiceModel.OperationContractAttribute(IsOneWay=true, Action="http://tempuri.org/ICRUD/setPersonDiet")]
         void setPersonDiet(int DietID, int PersonID);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/ICRUD/setPersonDiet", ReplyAction="http://tempuri.org/ICRUD/setPersonDietResponse")]
+        [System.ServiceModel.OperationContractAttribute(IsOneWay=true, Action="http://tempuri.org/ICRUD/setPersonDiet")]
         System.Threading.Tasks.Task setPersonDietAsync(int DietID, int PersonID);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/ICRUD/validName", ReplyAction="http://tempuri.org/ICRUD/validNameResponse")]
+        bool validName(string Name);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/ICRUD/validName", ReplyAction="http://tempuri.org/ICRUD/validNameResponse")]
+        System.Threading.Tasks.Task<bool> validNameAsync(string Name);
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
@@ -187,11 +193,11 @@ namespace BloodPressureForms.CRUDService {
             return base.Channel.getObserversAsync();
         }
         
-        public int updatePerson(BloodPressure.Person p) {
-            return base.Channel.updatePerson(p);
+        public void updatePerson(BloodPressure.Person p) {
+            base.Channel.updatePerson(p);
         }
         
-        public System.Threading.Tasks.Task<int> updatePersonAsync(BloodPressure.Person p) {
+        public System.Threading.Tasks.Task updatePersonAsync(BloodPressure.Person p) {
             return base.Channel.updatePersonAsync(p);
         }
         
@@ -209,6 +215,14 @@ namespace BloodPressureForms.CRUDService {
         
         public System.Threading.Tasks.Task setPersonDietAsync(int DietID, int PersonID) {
             return base.Channel.setPersonDietAsync(DietID, PersonID);
+        }
+        
+        public bool validName(string Name) {
+            return base.Channel.validName(Name);
+        }
+        
+        public System.Threading.Tasks.Task<bool> validNameAsync(string Name) {
+            return base.Channel.validNameAsync(Name);
         }
     }
 }

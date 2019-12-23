@@ -15,14 +15,35 @@ namespace BloodPressure
    
     public class CRUD : ICRUD
     {
-        static string connString = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=D:\\First Term - 4th Year\\SW Architecture\\Project\\Blood-Pressure-system\\BloodPressure\\App_Data\\BloodPressure.mdf;Integrated Security=True";
+        static string connString = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=C:\\Users\\mostafax\\Desktop\\Blood-Pressure-system\\BloodPressure\\App_Data\\BloodPressure.mdf;Integrated Security=True";
         SqlConnection sqlConn = new SqlConnection(connString);
+
+        public bool validName(string Name)
+        {
+            sqlConn.Open();
+            SqlCommand cmd = new SqlCommand("select PersonID from  Person where Name = @Name", sqlConn);
+
+            cmd.Parameters.AddWithValue("@Name", Name);
+            SqlDataReader result;
+            result = cmd.ExecuteReader();
+
+            if (result.HasRows)
+            {
+                sqlConn.Close();
+                return true;
+            }
+            else
+                sqlConn.Close();
+            return false;
+
+        }
+
 
         public List<string> getObservers()
         {
             
             sqlConn.Open();
-            SqlCommand cmd = new SqlCommand("select Email from BloodTrack, Person where BloodTrack.NextBloodTrack >= GETDATE() and Person.PersonID = BloodTrack.PersonID", sqlConn);
+            SqlCommand cmd = new SqlCommand("select distinct Email from BloodTrack, Person where BloodTrack.NextBloodTrack >= GETDATE()-3 and Person.PersonID = BloodTrack.PersonID and Person.Email <> 'None' ", sqlConn);
             SqlDataReader reader;
             reader = cmd.ExecuteReader();
             List<string> Emailslist = new List<string>();
@@ -130,7 +151,7 @@ namespace BloodPressure
             sqlConn.Close();
         }
 
-        public int updatePerson(Person p)
+        public void updatePerson(Person p)
         {
             sqlConn.Open();
             SqlCommand cmd = new SqlCommand("update Person set Name = @Name, Age = @Age,Weight = @Weight,Gender = @Gender,Email =@Email, Password=@Password where Person.PersonID = @PersonID;", sqlConn);
@@ -143,18 +164,8 @@ namespace BloodPressure
             cmd.Parameters.AddWithValue("@Password", p.Password);
            // cmd.Parameters.AddWithValue("@DietID", p.DietID);
             cmd.Parameters.AddWithValue("@PersonID", p.PersonID);
-            int done = cmd.ExecuteNonQuery();
-            if (done == 1)
-            {
-                sqlConn.Close();
-                return 1;
-            }
-            else
-            {
-                sqlConn.Close();
-                return -1;
-            }
-
+            cmd.ExecuteNonQuery();
+            sqlConn.Close();
             
         }
 
